@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  9 MAR 2018 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  9 MAR 2018 21:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -522,233 +522,305 @@ Package acronym Info: Label `acro:CAD' newly defined as it shall be overridden
 although it is yet undefined on input line 5.
 Package acronym Info: Label `acro:CSG' newly defined as it shall be overridden
 although it is yet undefined on input line 8.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+Package acronym Info: Label `acro:GA' newly defined as it shall be overridden
+although it is yet undefined on input line 18.
 
-
-LaTeX Warning: Reference `fig:box' on page 1 undefined on input line 13.
-
-Package acronym Info: Label `acro:RANSAC' newly defined as it shall be overridd
-en
-although it is yet undefined on input line 20.
-
-Underfull \hbox (badness 1231) in paragraph at lines 5--26
+Underfull \hbox (badness 1231) in paragraph at lines 5--28
 \T1/ptm/m/n/10 Reverse En-gi-neer-ing ([])[] -i.e., the re-cov-ery of a
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 5--26
+Underfull \hbox (badness 3668) in paragraph at lines 5--28
 \T1/ptm/m/n/10 model's ge-o-met-ric rep-re-sen-ta-tion from po-ten-tially
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 5--26
+Underfull \hbox (badness 1281) in paragraph at lines 5--28
 \T1/ptm/m/n/10 as-pect of mod-ern [][]Com-puter Aided De-sign ([])[]
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 5--26
+Underfull \hbox (badness 3724) in paragraph at lines 5--28
 \T1/ptm/m/n/10 An ex-pres-sive and in-tu-itive model rep-re-sen-ta-tion
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 5--26
+Underfull \hbox (badness 2418) in paragraph at lines 5--28
 \T1/ptm/m/n/10 solids by a bi-nary tree with reg-u-lar-ized boolean
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 5--26
-\T1/ptm/b/n/10 Point cloud gen-er-a-tion & pre-processing: \T1/ptm/m/n/10 Point
-
+Underfull \hbox (badness 2310) in paragraph at lines 5--28
+[][]\T1/ptm/m/n/10 -tree gen-er-a-tion might be solved with meth-
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 5--26
-\T1/ptm/m/n/10 clouds are gen-er-ated by laser scan-ners or tac-tile
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 5--26
-\T1/ptm/m/n/10 mea-sure-ment de-vices. Other tech-niques use pho-
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 5--26
-\T1/ptm/m/n/10 that ful-fill both tasks for sim-ple ge-o-met-ric shapes
- []
-
-Package acronym Info: Label `acro:GA' newly defined as it shall be overridden
-although it is yet undefined on input line 31.
-
-Underfull \hbox (badness 2310) in paragraph at lines 27--41
-[][][]\T1/ptm/m/n/10 -tree gen-er-a-tion might be solved with meth-
- []
-
-
-Underfull \hbox (badness 4096) in paragraph at lines 27--41
+Underfull \hbox (badness 4096) in paragraph at lines 5--28
 \T1/ptm/m/n/10 ods based on al-go-rith-mic ge-om-e-try that usu-ally
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 27--41
+Underfull \hbox (badness 4072) in paragraph at lines 5--28
 \T1/ptm/m/n/10 re-quire ex-act ge-o-met-ric in-ter-sec-tion com-pu-ta-tions
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 27--41
+Underfull \hbox (badness 2221) in paragraph at lines 5--28
 \T1/ptm/m/n/10 To over-come this con-straint, [][]-tree gen-er-a-tion
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 27--41
+Underfull \hbox (badness 1205) in paragraph at lines 5--28
 \T1/ptm/m/n/10 and set-operations for a fixed max-i-mum [][]-tree
  []
 
 
-Underfull \vbox (badness 4927) has occurred while \output is active []
+Underfull \hbox (badness 2961) in paragraph at lines 5--28
+\T1/ptm/m/n/10 is to ex-ploit spa-tial re-la-tion-ships be-tween prim-i-
+ []
 
+
+Underfull \hbox (badness 1112) in paragraph at lines 5--28
+\T1/ptm/m/n/10 tives: Prim-i-tives that do not over-lap spa-tially are
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 29.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 42.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 42.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+Underfull \hbox (badness 1584) in paragraph at lines 42--47
+\T1/ptm/m/n/10 clouds are gen-er-ated by laser scan-ners or tac-
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 42--47
+\T1/ptm/m/n/10 pho-togram-met-ric al-go-rithms to gather depth in-
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 42--47
+\T1/ptm/m/n/10 for-ma-tion from (un-)calibrated cam-era im-ages
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--47
+
+ []
+
+Package acronym Info: Label `acro:RANSAC' newly defined as it shall be overridd
+en
+although it is yet undefined on input line 47.
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
 
 <figures/Praesentation1.pdf, id=12, 411.81851pt x 161.38855pt>
 File: figures/Praesentation1.pdf Graphic file (type pdf)
 
 <use figures/Praesentation1.pdf>
-Package pdftex.def Info: figures/Praesentation1.pdf used on input line 49.
+Package pdftex.def Info: figures/Praesentation1.pdf used on input line 68.
 (pdftex.def)             Requested size: 227.62206pt x 89.2023pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 49--50
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--71
+Underfull \hbox (badness 10000) in paragraph at lines 83--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--86
-
- []
-
-
-Underfull \hbox (badness 1127) in paragraph at lines 87--106
+Underfull \hbox (badness 1127) in paragraph at lines 89--108
 \T1/ptm/m/n/10 The prob-lem un-der con-sid-er-a-tion is re-lated to the
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 87--106
+Underfull \hbox (badness 1400) in paragraph at lines 89--108
 \T1/ptm/m/n/10 space for lin-ear poly-gons, then later ex-tended by
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 87--106
+Underfull \hbox (badness 1803) in paragraph at lines 89--108
 \T1/ptm/m/n/10 with in-put point-clouds that are po-ten-tially noisy,
  []
 
 [2 <./figures/Praesentation1.pdf>]
-Underfull \hbox (badness 1430) in paragraph at lines 148--153
+Package acronym Info: Label `acro:PO' newly defined as it shall be overridden
+although it is yet undefined on input line 139.
+Package acronym Info: Label `acro:AABB' newly defined as it shall be overridden
+
+although it is yet undefined on input line 143.
+Package acronym Info: Label `acro:OBB' newly defined as it shall be overridden
+although it is yet undefined on input line 143.
+Package acronym Info: Label `acro:BKA' newly defined as it shall be overridden
+although it is yet undefined on input line 154.
+
+Underfull \hbox (badness 2726) in paragraph at lines 147--161
+\T1/ptm/m/n/10 ex-per-i-men-tally [[]] that com-pu-ta-tion times of
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 147--161
+\T1/ptm/m/n/10 par-tic-u-lar [][]-graph, the search space par-ti-tion-ing
+ []
+
+<figures/right_part.pdf, id=60, 381.99901pt x 482.94714pt>
+File: figures/right_part.pdf Graphic file (type pdf)
+
+<use figures/right_part.pdf>
+Package pdftex.def Info: figures/right_part.pdf used on input line 165.
+(pdftex.def)             Requested size: 66.1416pt x 83.61797pt.
+
+<figures/wrong_part.pdf, id=61, 380.85074pt x 485.815pt>
+File: figures/wrong_part.pdf Graphic file (type pdf)
+
+<use figures/wrong_part.pdf>
+Package pdftex.def Info: figures/wrong_part.pdf used on input line 170.
+(pdftex.def)             Requested size: 66.1416pt x 84.36655pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
+\T1/ptm/m/n/10 With known par-ti-tions, [][]-tree ex-trac-tion is
+ []
+
+[3 <./figures/right_part.pdf> <./figures/wrong_part.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/wrong_part.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 1430) in paragraph at lines 197--202
 \T1/ptm/m/n/10 can-di-dates ex-change ran-domly se-lected sub-trees
  []
 
-Package acronym Info: Label `acro:PO' newly defined as it shall be overridden
-although it is yet undefined on input line 159.
-Package acronym Info: Label `acro:AABB' newly defined as it shall be overridden
-
-although it is yet undefined on input line 163.
-Package acronym Info: Label `acro:OBB' newly defined as it shall be overridden
-although it is yet undefined on input line 163.
-Package acronym Info: Label `acro:BKA' newly defined as it shall be overridden
-although it is yet undefined on input line 178.
-[3]
-Underfull \hbox (badness 2600) in paragraph at lines 205--207
-\T1/ptm/m/n/10 The merge pro-cess has a time com-plex-ity of
- []
-
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 229.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 255.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 230.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 256.
 
-<figures/wm_0.pdf, id=65, 200.75pt x 200.75pt>
+<figures/wm_0.pdf, id=82, 200.75pt x 200.75pt>
 File: figures/wm_0.pdf Graphic file (type pdf)
  <use figures/wm_0.pdf>
-Package pdftex.def Info: figures/wm_0.pdf used on input line 238.
+Package pdftex.def Info: figures/wm_0.pdf used on input line 264.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/wm_1.pdf, id=66, 200.75pt x 200.75pt>
+<figures/wm_1.pdf, id=83, 200.75pt x 200.75pt>
 File: figures/wm_1.pdf Graphic file (type pdf)
  <use figures/wm_1.pdf>
-Package pdftex.def Info: figures/wm_1.pdf used on input line 240.
+Package pdftex.def Info: figures/wm_1.pdf used on input line 266.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/wm_2.pdf, id=67, 200.75pt x 200.75pt>
+<figures/wm_2.pdf, id=84, 200.75pt x 200.75pt>
 File: figures/wm_2.pdf Graphic file (type pdf)
  <use figures/wm_2.pdf>
-Package pdftex.def Info: figures/wm_2.pdf used on input line 242.
+Package pdftex.def Info: figures/wm_2.pdf used on input line 268.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/wm_3.pdf, id=68, 200.75pt x 200.75pt>
+<figures/wm_3.pdf, id=85, 200.75pt x 200.75pt>
 File: figures/wm_3.pdf Graphic file (type pdf)
  <use figures/wm_3.pdf>
-Package pdftex.def Info: figures/wm_3.pdf used on input line 249.
+Package pdftex.def Info: figures/wm_3.pdf used on input line 275.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/wm_4.pdf, id=69, 200.75pt x 200.75pt>
+<figures/wm_4.pdf, id=86, 200.75pt x 200.75pt>
 File: figures/wm_4.pdf Graphic file (type pdf)
  <use figures/wm_4.pdf>
-Package pdftex.def Info: figures/wm_4.pdf used on input line 251.
+Package pdftex.def Info: figures/wm_4.pdf used on input line 277.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/wm_5.pdf, id=70, 200.75pt x 200.75pt>
+<figures/wm_5.pdf, id=87, 200.75pt x 200.75pt>
 File: figures/wm_5.pdf Graphic file (type pdf)
  <use figures/wm_5.pdf>
-Package pdftex.def Info: figures/wm_5.pdf used on input line 253.
+Package pdftex.def Info: figures/wm_5.pdf used on input line 279.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/pipe_0.pdf, id=71, 200.75pt x 200.75pt>
+<figures/pipe_0.pdf, id=88, 200.75pt x 200.75pt>
 File: figures/pipe_0.pdf Graphic file (type pdf)
  <use figures/pipe_0.pdf>
-Package pdftex.def Info: figures/pipe_0.pdf used on input line 264.
+Package pdftex.def Info: figures/pipe_0.pdf used on input line 290.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/pipe_1.pdf, id=72, 200.75pt x 200.75pt>
+<figures/pipe_1.pdf, id=89, 200.75pt x 200.75pt>
 File: figures/pipe_1.pdf Graphic file (type pdf)
  <use figures/pipe_1.pdf>
-Package pdftex.def Info: figures/pipe_1.pdf used on input line 270.
+Package pdftex.def Info: figures/pipe_1.pdf used on input line 296.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/pipe_2.pdf, id=73, 200.75pt x 200.75pt>
+<figures/pipe_2.pdf, id=90, 200.75pt x 200.75pt>
 File: figures/pipe_2.pdf Graphic file (type pdf)
  <use figures/pipe_2.pdf>
-Package pdftex.def Info: figures/pipe_2.pdf used on input line 276.
+Package pdftex.def Info: figures/pipe_2.pdf used on input line 302.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-<figures/pipe_4.pdf, id=74, 441.65002pt x 200.75pt>
+<figures/pipe_4.pdf, id=91, 441.65002pt x 200.75pt>
 File: figures/pipe_4.pdf Graphic file (type pdf)
  <use figures/pipe_4.pdf>
-Package pdftex.def Info: figures/pipe_4.pdf used on input line 282.
+Package pdftex.def Info: figures/pipe_4.pdf used on input line 308.
 (pdftex.def)             Requested size: 139.63042pt x 63.46938pt.
 
-<figures/pipe_3.pdf, id=75, 200.75pt x 200.75pt>
+<figures/pipe_3.pdf, id=92, 200.75pt x 200.75pt>
 File: figures/pipe_3.pdf Graphic file (type pdf)
  <use figures/pipe_3.pdf>
-Package pdftex.def Info: figures/pipe_3.pdf used on input line 288.
+Package pdftex.def Info: figures/pipe_3.pdf used on input line 314.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
-[4 <./figures/wm_0.pdf> <./figures/wm_1.pdf
+[4]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/g1.pdf, id=97, 406.68814pt x 252.95691pt>
+File: figures/g1.pdf Graphic file (type pdf)
+ <use figures/g1.pdf>
+Package pdftex.def Info: figures/g1.pdf used on input line 416.
+(pdftex.def)             Requested size: 227.62206pt x 141.58156pt.
+
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 416--417
+ [][] 
+ []
+
+<figures/g3.pdf, id=98, 390.73793pt x 253.23923pt>
+File: figures/g3.pdf Graphic file (type pdf)
+ <use figures/g3.pdf>
+Package pdftex.def Info: figures/g3.pdf used on input line 422.
+(pdftex.def)             Requested size: 227.62206pt x 147.5203pt.
+
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 422--423
+ [][] 
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 387--426
+\T1/ptm/m/n/10 search space par-ti-tion-ing vari-ant (SMTGA). This
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 387--426
+\T1/ptm/m/n/10 Search space par-ti-tion-ing with [][] par-al-leliza-tion
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 387--426
+\T1/ptm/m/n/10 trees, while base-line ap-proaches in-crease tree size
+ []
+
+[5 <./figures/wm_0.pdf> <./figures/wm_1.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/wm_1.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -768,74 +840,11 @@ pdfTeX warning: pdflatex.exe (file ./figures/wm_4.pdf): PDF inclusion: multiple
 
 pdfTeX warning: pdflatex.exe (file ./figures/wm_5.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
->]
-Underfull \hbox (badness 1776) in paragraph at lines 363--377
-\T1/ptm/m/n/10 vari-ants were com-pared for model $\OT1/ztmcm/m/n/10 1$ \T1/ptm
-/m/n/10 and $\OT1/ztmcm/m/n/10 2$ \T1/ptm/m/n/10 with
- []
+> <./figures/pipe_0.pdf
 
-
-Underfull \hbox (badness 1092) in paragraph at lines 363--377
-\T1/ptm/m/n/10 trees, while base-line ap-proaches in-crease tree size
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--377
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.381 F
-       igure \ref{fig:graph3} shows the dependency between point cloud size ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<figures/g1.pdf, id=125, 406.68814pt x 252.95691pt>
-File: figures/g1.pdf Graphic file (type pdf)
- <use figures/g1.pdf>
-Package pdftex.def Info: figures/g1.pdf used on input line 384.
-(pdftex.def)             Requested size: 227.62206pt x 141.58156pt.
-
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 384--385
- [][] 
- []
-
-<figures/g3.pdf, id=126, 361.35pt x 216.81pt>
-File: figures/g3.pdf Graphic file (type pdf)
- <use figures/g3.pdf>
-Package pdftex.def Info: figures/g3.pdf used on input line 390.
-(pdftex.def)             Requested size: 227.62206pt x 136.57448pt.
-
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 390--391
- [][] 
- []
-
-<figures/g2.pdf, id=127, 373.81534pt x 252.95691pt>
-File: figures/g2.pdf Graphic file (type pdf)
- <use figures/g2.pdf>
-Package pdftex.def Info: figures/g2.pdf used on input line 397.
-(pdftex.def)             Requested size: 227.62206pt x 154.02943pt.
-
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 397--398
- [][] 
- []
-
-
-LaTeX Warning: Citation `weber2010sharp' on page 5 undefined on input line 408.
-
-
-
-Underfull \vbox (badness 3646) has occurred while \output is active []
-
- [5 <./figures/pipe_0.pdf> <./figures/pipe_1.pdf
+pdfTeX warning: pdflatex.exe (file ./figures/pipe_0.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/pipe_1.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/pipe_1.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
@@ -851,15 +860,21 @@ le pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figures/pipe_3.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
-> <./figures/g1.pdf
+>] <figures/g2.pdf, id=197, 373.81534pt x 252.95691pt>
+File: figures/g2.pdf Graphic file (type pdf)
+ <use figures/g2.pdf>
+Package pdftex.def Info: figures/g2.pdf used on input line 429.
+(pdftex.def)             Requested size: 227.62206pt x 154.02943pt.
 
-pdfTeX warning: pdflatex.exe (file ./figures/g1.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./figures/g3.pdf
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 429--430
+ [][] 
+ []
 
-pdfTeX warning: pdflatex.exe (file ./figures/g3.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->]) (main.bbl
+
+LaTeX Warning: Citation `weber2010sharp' on page 6 undefined on input line 440.
+
+
+) (main.bbl
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -891,7 +906,15 @@ Underfull \hbox (badness 1259) in paragraph at lines 20--23
 []\T1/ptm/m/n/10 Philippe Fla-jo-let and An-drew M. 
  []
 
-) [6 <./figures/g2.pdf>] [7
+[6 <./figures/g1.pdf> <./figures/g3.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/g3.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./figures/g2.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/g2.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>]) [7
 
 ] (main.aux)
 
@@ -899,13 +922,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6420 strings out of 493323
- 94225 string characters out of 3139054
- 186864 words of memory out of 3000000
- 9764 multiletter control sequences out of 15000+200000
+ 6429 strings out of 493323
+ 94462 string characters out of 3139054
+ 188864 words of memory out of 3000000
+ 9771 multiletter control sequences out of 15000+200000
  50923 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,21n,40p,380b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,21n,40p,386b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -919,9 +942,9 @@ type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/u
 syr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 295700 bytes).
+Output written on main.pdf (7 pages, 305758 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
+ 344 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
