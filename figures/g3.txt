@@ -1,0 +1,20 @@
+set terminal pdf
+set output 'g3.pdf'
+
+set style data histogram
+set style histogram cluster gap 1
+
+set style fill solid border rgb "black"
+set auto x
+set yrange [0:*]
+set ylabel '[time ratio / #points ratio]'
+
+set arrow 1 from -1,1 to 2,1 nohead lc rgb "red" filled
+
+plot 'g3_data.txt' using 2:xtic(1) title col, \
+        '' using 3:xtic(1) title col, \
+        '' using 4:xtic(1) title col, \
+        '' using 5:xtic(1) title col, \
+        '' using 6:xtic(1) title col, \
+	'' using 7:xtic(1) title col
+

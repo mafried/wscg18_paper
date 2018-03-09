@@ -1,0 +1,5 @@
+Model		Baseline	Partitioning	"Input Tree"
+"Model1 Depth"	9.0		12.75		5
+"Model1 #Nodes"	35.0		58.5		33
+"Model2 Depth"	3.0		4.5		3		
+"Model2 #Nodes"	7.0		11.0		7

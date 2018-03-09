@@ -1,0 +1,32 @@
+
+%%
+%%   Defines a new environment 'myalgorithm' that puts the caption *beneath*
+%%   the ruled algrothm.
+%%   Loads algorithm2e.sty
+%%
+%%   GZ, Sep 2011
+%%
+
+
+\RequirePackage[ruled,noend,noline,slide]{algorithm2e}
+% 'slide' = more baseline skip
+
+% the following environment is necessary to make line spacing inside an algorithm
+% even, at least with egpubl.cls!
+%\newenvironment{myalgorithm}[1][htbp] 
+%  {\begin{algorithm}[#1]\setlength{\parskip}{0pt}} 
+%  {\end{algorithm}} 
+
+\SetCommentSty{textsf}
+\DontPrintSemicolon
+\setlength{\algomargin}{1.3ex}  % match margin with indentation of ``Algorithm x"
+\SetKwInOut{Input}{input}
+\SetKwInOut{Inout}{in/out}
+
+\newenvironment{myalgorithm}
+{\def\@algocf@post@ruled{\kern\interspacealgoruled\hrule  height\algoheightrule\kern3pt\relax}%
+	\def\@algocf@capt@ruled{under}
+	\begin{algorithm}[tb]}
+{\end{algorithm}}
+
+

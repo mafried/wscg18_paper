@@ -1,0 +1,99 @@
+\begin{thebibliography}{MMGG95}
+
+\bibitem[BC04]{buchele2004three}
+Suzanne~F Buchele and Richard~H Crawford.
+\newblock Three-dimensional halfspace constructive solid geometry tree
+  construction from implicit boundary representations.
+\newblock {\em Computer-Aided Design}, 36(11):1063--1073, 2004.
+
+\bibitem[BK73]{bron1973cliques}
+Coen Bron and Joep Kerbosch.
+\newblock Algorithm 457: finding all cliques of an undirected graph.
+\newblock {\em Communications of the ACM}, 16(9):575--577, 1973.
+
+\bibitem[CEJM13]{czabarka2013mlt}
+É. Czabarka, P.L. Erdős, V.~Johnson, and V.~Moulton.
+\newblock Generating functions for multi-labeled trees.
+\newblock {\em Discrete Applied Mathematics}, 161(1):107 -- 117, 2013.
+
+\bibitem[FO82]{flajolet1982TheAH}
+Philippe Flajolet and Andrew~M. Odlyzko.
+\newblock The average height of binary trees and other simple trees.
+\newblock {\em J. Comput. Syst. Sci.}, 25:171--213, 1982.
+
+\bibitem[FP16]{fayolle2016evolutionary}
+Pierre-Alain Fayolle and Alexander Pasko.
+\newblock An evolutionary approach to the extraction of object construction
+  trees from 3d point clouds.
+\newblock {\em Computer-Aided Design}, 74:1--17, 2016.
+
+\bibitem[HZ03]{hartley2003multiple}
+Richard Hartley and Andrew Zisserman.
+\newblock {\em Multiple view geometry in computer vision}.
+\newblock Cambridge university press, 2003.
+
+\bibitem[Mea82]{meagher1982Octree}
+Donald Meagher.
+\newblock Geometric modeling using octree encoding.
+\newblock {\em Computer Graphics and Image Processing}, 19(2):129 -- 147, 1982.
+
+\bibitem[Mit98]{mitchell1998introduction}
+Melanie Mitchell.
+\newblock {\em An introduction to genetic algorithms}.
+\newblock 1998.
+
+\bibitem[MM65]{moon1965cliques}
+J.~W. Moon and L.~Moser.
+\newblock On cliques in graphs.
+\newblock {\em Israel Journal of Mathematics}, 3(1):23--28, Mar 1965.
+
+\bibitem[MMGG95]{miller95genetic}
+Brad~L. Miller, Brad~L. Miller, David~E. Goldberg, and David~E. Goldberg.
+\newblock Genetic algorithms, tournament selection, and the effects of noise.
+\newblock {\em Complex Systems}, 9:193--212, 1995.
+
+\bibitem[RC11]{rusu20113d}
+Radu~Bogdan Rusu and Steve Cousins.
+\newblock 3d is here: Point cloud library (pcl).
+\newblock In {\em Robotics and automation (ICRA), 2011 IEEE International
+  Conference on}, pages 1--4. IEEE, 2011.
+
+\bibitem[Ric73]{ricci197constgeo}
+A.~Ricci.
+\newblock A constructive geometry for computer graphics.
+\newblock {\em The Computer Journal}, 16(2):157--160, 1973.
+
+\bibitem[Sha01]{shapiro2001convex}
+Vadim Shapiro.
+\newblock A convex deficiency tree algorithm for curved polygons.
+\newblock {\em International Journal of Computational Geometry \&
+  Applications}, 11(02):215--238, 2001.
+
+\bibitem[SV91a]{shapiro1991construction}
+Vadim Shapiro and Donald~L Vossler.
+\newblock Construction and optimization of csg representations.
+\newblock {\em Computer-Aided Design}, 23(1):4--20, 1991.
+
+\bibitem[SV91b]{shapiro1991efficient}
+Vadim Shapiro and Donald~L Vossler.
+\newblock Efficient csg representations of two-dimensional solids.
+\newblock {\em Journal of Mechanical Design}, 113(3):292--305, 1991.
+
+\bibitem[SV93]{shapiro1993separation}
+Vadim Shapiro and Donald~L Vossler.
+\newblock Separation for boundary to csg conversion.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 12(1):35--55, 1993.
+
+\bibitem[SWK07]{schnabel2007efficient}
+Ruwen Schnabel, Roland Wahl, and Reinhard Klein.
+\newblock Efficient ransac for point-cloud shape detection.
+\newblock In {\em Computer graphics forum}, volume~26, pages 214--226. Wiley
+  Online Library, 2007.
+
+\bibitem[Wei09]{weiss2009geometry}
+Daniel Weiss.
+\newblock {\em Geometry-based structural optimization on CAD specification
+  trees}.
+\newblock PhD thesis, ETH Zurich, 2009.
+
+\end{thebibliography}

@@ -1,0 +1,201 @@
+% WSCG sample document 
+%
+% based on Gabriel Zachmann's sample
+% http://zach.in.tu-clausthal.de/latex/
+%
+% modified Apr 2012 to match WSCG Word template
+%
+\documentclass[twoside,twocolumn,10pt]{article}
+%\documentclass[twoside,twocolumn,draft]{article}
+
+%  for debugging
+%\tracingall%\tracingonline=0
+%\tracingparagraphs
+%\tracingpages
+
+%%
+%%   Defines a new environment 'myalgorithm' that puts the caption *beneath*
+%%   the ruled algrothm.
+%%   Loads algorithm2e.sty
+%%
+%%   GZ, Sep 2011
+%%
+
+\RequirePackage[ruled,noend,noline,slide]{algorithm2e}
+% 'slide' = more baseline skip
+
+% the following environment is necessary to make line spacing inside an algorithm
+% even, at least with egpubl.cls!
+%\newenvironment{myalgorithm}[1][htbp] 
+%  {\begin{algorithm}[#1]\setlength{\parskip}{0pt}} 
+%  {\end{algorithm}} 
+
+\SetCommentSty{textsf}
+\DontPrintSemicolon
+\setlength{\algomargin}{1.3ex}  % match margin with indentation of ``Algorithm x"
+\SetKwInOut{Input}{input}
+\SetKwInOut{Inout}{in/out}
+
+\newenvironment{myalgorithm}
+{\def\@algocf@post@ruled{\kern\interspacealgoruled\hrule  height\algoheightrule\kern3pt\relax}%
+	\def\@algocf@capt@ruled{under}
+	\begin{algorithm}[tb]}
+	{\end{algorithm}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             Packages
+
+\usepackage{wscg}           % includes a number of other packages (e.g., myalgorithm)
+
+\RequirePackage{ifpdf}
+\ifpdf
+ \RequirePackage[pdftex]{graphicx}
+ \RequirePackage[pdftex]{color}
+\else
+ \RequirePackage[dvips,draft]{graphicx}
+ \RequirePackage[dvips]{color}
+\fi
+
+
+%\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+%\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+
+%\algnewcommand\algorithmicforeach{\textbf{for each}}
+%\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage [nolist]{acronym}
+
+%\usepackage[german,english]{babel}     % default = english
+%\usepackage{mypicture}      % loads graphicx.sty, color.sty, eepic.sty
+%\usepackage{array}          % better tabular's & arrays, plus math tabular's
+%\usepackage{tabularx}      % for selfadjusting p-columns
+%\setlength{\extrarowheight}{1ex}   % additional space between rows
+%\usepackage{booktabs}      % typographically much better
+%\usepackage{mdwlist}        % for compacted lists, and more versatile lists
+%\usepackage[intlimits]{amsmath} % more math stuff, see texdoc amsldoc
+%\usepackage{mymath}         % own commands, loads amssymb & array.sty
+%\usepackage{hyphenat}      % hyphenatable -, /, etc.
+%\usepackage{theorem}
+%\usepackage[sort&compress]{natbib}% better \cite commands, more flexible
+%\usepackage[sort&compress,super]{natbib} % better \cite commands, more flexible
+%\newcommand{\citenumfont}[1]{\textit{#1}}
+
+
+\usepackage{nopageno}       % no page numbers at all; uncomment for final version
+
+\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                Title
+
+%\title{Spatial Acceleration Schemes for Evolutionary Object Construction Tree Recovery Approaches} %from Segmented Point-Sets}
+
+\title {Accelerating Evolutionary Object Construction Tree Recovery}
+
+\author{
+\parbox{0.25\textwidth}{\centering
+First Author\\[1mm]
+author's affiliation\\
+1st line of address\\
+2nd line of address\\
+Country (ZIP) code, City, State\\[1mm]
+e@mail
+}
+\hspace{0.05\textwidth}
+\parbox{0.25\textwidth}{\centering
+Second Author\\[1mm]
+author's affiliation\\
+1st line of address\\
+2nd line of address\\
+Country (ZIP) code, City, State\\[1mm]
+e@mail
+}
+\hspace{0.05\textwidth}
+\parbox{0.25\textwidth}{\centering
+Third Author\\[1mm]
+author's affiliation\\
+1st line of address\\
+2nd line of address\\
+Country (ZIP) code, City, State\\[1mm]
+e@mail
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Hyperref
+
+
+% no hyperlinks
+\usepackage{url}
+\urlstyle{tt}
+
+% Donald Arsenau's fix for missing kerning of "//" and ":/"
+\makeatletter
+\def\Uslash{\mathbin{\mathchar`\/}\@ifnextchar{/}{\kern-.15em}{}}
+\g@addto@macro\UrlSpecials{\do \/ {\Uslash}}
+\def\Ucolon{\mathbin{\mathchar`:}\@ifnextchar{/}{\kern-.1em}{}}
+\g@addto@macro\UrlSpecials{\do : {\Ucolon}}
+\makeatother
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              My Commands
+
+
+%\DeclareMathOperator{\sgn}{sgn}
+
+%\theorembodyfont{\upshape}
+%\theoremstyle{break}
+%\theoremheaderfont{\bfseries\normalsize}
+
+%\newtheorem{lem}{Lemma}
+%\newtheorem{defn}{Definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                Document
+\begin{document}
+
+\twocolumn[{\csname @twocolumnfalse\endcsname
+
+\maketitle  % full width title
+
+\begin{abstract}
+\noindent
+\input{sections/abstract.tex}
+\end{abstract}
+\subsection*{Keywords}
+$3$-d Reconstruction, Reverse Engineering, Computer Aided Design, Constructive Solid Geometry, Evolutionary Algorithms, Graph Theory
+\vspace*{1.0\baselineskip}
+}]
+\begin{acronym}
+	\acro{CSG}{Constructive Solid Geometry}
+	\acro{CAD}{Computer Aided Design}
+	\acro{GA}{Genetic Algorithm}
+	\acro{RE}{Reverse Engineering}
+	\acro{BRep}{Boundary Representation}
+	\acro{PO}{Primitive Overlap}	
+	\acro{AABB}{Axis-Aligned Bounding Box}
+	\acrodefplural{AABB}[AABBs]{Axis-Aligned Bounding Boxes}
+	\acro{OBB}{Oriented Bounding Box}
+	\acrodefplural{OBB}[OBBs]{Oriented Bounding Boxes}	
+	\acro{BKA}{Bron-Kerbosch Algorithm}
+	\acro{RANSAC}{Random Sample Consensus}
+\end{acronym}
+\input{sections/content.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{alpha} % SFELD
+\bibliography{main} % SFELD
+{\bfseries
+Last page should be fully used by text, figures etc. Do not leave empty space, please. 
+
+Do not lock the PDF -- additional text and info will be inserted, i.e. ISSN/ISBN etc. 
+}
+\end{document}
+
