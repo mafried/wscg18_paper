@@ -1,3 +1,4 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{MMGG95}
 
 \bibitem[BC04]{buchele2004three}
@@ -11,15 +12,10 @@ Coen Bron and Joep Kerbosch.
 \newblock Algorithm 457: finding all cliques of an undirected graph.
 \newblock {\em Communications of the ACM}, 16(9):575--577, 1973.
 
-\bibitem[CEJM13]{czabarka2013mlt}
-É. Czabarka, P.L. Erdős, V.~Johnson, and V.~Moulton.
-\newblock Generating functions for multi-labeled trees.
-\newblock {\em Discrete Applied Mathematics}, 161(1):107 -- 117, 2013.
-
-\bibitem[FO82]{flajolet1982TheAH}
-Philippe Flajolet and Andrew~M. Odlyzko.
-\newblock The average height of binary trees and other simple trees.
-\newblock {\em J. Comput. Syst. Sci.}, 25:171--213, 1982.
+\bibitem[ES{\etalchar{+}}03]{eiben2003introduction}
+Agoston~E Eiben, James~E Smith, et~al.
+\newblock {\em Introduction to evolutionary computing}, volume~53.
+\newblock Springer, 2003.
 
 \bibitem[FP16]{fayolle2016evolutionary}
 Pierre-Alain Fayolle and Alexander Pasko.
@@ -36,11 +32,6 @@ Richard Hartley and Andrew Zisserman.
 Donald Meagher.
 \newblock Geometric modeling using octree encoding.
 \newblock {\em Computer Graphics and Image Processing}, 19(2):129 -- 147, 1982.
-
-\bibitem[Mit98]{mitchell1998introduction}
-Melanie Mitchell.
-\newblock {\em An introduction to genetic algorithms}.
-\newblock 1998.
 
 \bibitem[MM65]{moon1965cliques}
 J.~W. Moon and L.~Moser.
