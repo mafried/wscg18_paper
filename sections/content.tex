@@ -417,17 +417,17 @@ Figure \ref{fig:graph3} depicts measurement results for the ratio
 \frac{\#\text{points}_{high}}{\#\text{points}_{low}} : \frac{\text{duration}_{high}}{\text{duration}_{low}}
 \end{equation}
 which quantifies the dependency between point cloud size and corresponding computation times.
-It indicates that, for larger models (model $0$ and $2$), baseline approaches show super linear scaling behavior with respect to point cloud size, whereas partitioning approaches scale sublinearly. 
+It indicates that, for larger models (model $0$ and $2$), the fastest partitioning approach scales up to $1.9$-times better than the best performing baseline approach with respect to point cloud size.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g1.pdf}
-	\caption{Timings for all approach combinations for all models with high-detailed sampling. Vertical black lines indicate standard deviation.}
+	\caption{Timings for all approach combinations for and models with high-detailed sampling. Vertical black lines indicate standard deviation.}
 	\label{fig:graph1}
 \end{figure}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g3.pdf}
-	\caption{Ratio between high-detail and low-detail point cloud size factor and corresponding timing factors for all models (see Equation \ref{eq:ratio}). The red line indicates perfectly linear scaling with respect to point cloud size.}
+	\caption{Ratio between high-detail and low-detail point cloud size factor and corresponding timing factors for all models (see Equation \ref{eq:ratio}). The red line indicates linear scaling with a slope of $1$ with respect to point cloud size.}
 	\label{fig:graph3}
 \end{figure}
 

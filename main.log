@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  10 MAR 2018 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  10 MAR 2018 12:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -899,11 +899,11 @@ le pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figures/pipe_3.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] <figures/g1.pdf, id=196, 406.68814pt x 252.95691pt>
+>] <figures/g1.pdf, id=196, 406.68814pt x 253.23923pt>
 File: figures/g1.pdf Graphic file (type pdf)
  <use figures/g1.pdf>
 Package pdftex.def Info: figures/g1.pdf used on input line 423.
-(pdftex.def)             Requested size: 227.62206pt x 141.58156pt.
+(pdftex.def)             Requested size: 227.62206pt x 141.73958pt.
 
 Overfull \hbox (7.15225pt too wide) in paragraph at lines 423--424
  [][] 
@@ -1000,7 +1000,7 @@ syr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/wasy/wasy10.pfb>
-Output written on main.pdf (7 pages, 308561 bytes).
+Output written on main.pdf (7 pages, 308724 bytes).
 PDF statistics:
  346 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
