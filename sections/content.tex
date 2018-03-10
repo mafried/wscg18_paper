@@ -151,6 +151,43 @@ Finally, resulting trees are combined in a subsequent merge step without loss of
 An overview of the full \ac{CSG}-extraction pipeline is depicted in Figure \ref{fig:pipeline_s}. 
 Each of the following Chapters describes a particular pipeline step in detail, following the order of execution.
 
+\begin{figure}[htb]
+	\centering
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\textwidth]{figures/pipe_0.pdf}
+		\caption{Primitives.}
+		\label{fig:pipe0}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\textwidth]{figures/pipe_1.pdf}
+		\caption{\ac{PO}-graph.}
+		\label{fig:pipe1}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.30\linewidth}
+		\includegraphics[width=\textwidth]{figures/pipe_2.pdf}
+		\caption{Partitions.}
+		\label{fig:pipe2}
+	\end{subfigure}
+	\vskip\baselineskip
+	\begin{subfigure}[b]{0.633333\linewidth}
+		\includegraphics[width=\textwidth]{figures/pipe_4.pdf}
+		\caption{Per-partition trees.}
+		\label{fig:pipe3}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.30\linewidth}
+		\includegraphics[width=\textwidth]{figures/pipe_3.pdf}
+		\caption{Merged tree.}
+		\label{fig:pipe4}
+	\end{subfigure}
+	\vskip\baselineskip	
+	\caption{The search space partitioning pipeline.}\label{fig:pipeline_s}
+\end{figure}
+
+
+
 \subsection{Primitive Overlap Graph Generation}
 \label{ch:pog}
 For expressing spatial relationships between primitives, the \ac{PO}-Graph is introduced.
@@ -234,17 +271,40 @@ It consists of the following steps:
 \begin{enumerate}
 	\item All trees are inserted in a list $L$. 
 	\item Two trees $t_0$ and $t_1$ are removed from the end of $L$, and their largest common subtree $t_{lcs}$ is computed. The subtree's leaf-set must be a subset of the leaf-sets of $t_0$ and $t_1$. 
+	A largest common subtree might exist more than once in both trees.
+	Thus, the root nodes of each appearance of the subtree in $t_0$ and $t_1$ are stored in the lists $N_0$ and $N_1$.
+	See Figure \ref{fig:subtree_0} for an example.
+	  \\	
 	If $t_{lcs}$ is empty, $t_1$ is inserted at the begin of $L$ and a new tree candidate $t_1$ is removed from the end of $L$. This step is then repeated.
-	\item Each node in $t_{tlc}$ exists twice: Once in $t_0$ and once in $t_1$. 
-	For each leaf node in $t_{tlc}$ it is checked if its corresponding node in $t_0$ and $t_1$ is a merge candidate.
-	This is done by traversing $t_0$ and $t_1$ from root to leaves following Algorithm \ref{al:trav}.
-	If the node is reached that way, it is a valid candidate in $t_0$ or $t_1$. 
-	Once a valid merge node candidate is found in one tree, it is replaced by the root of the other tree resulting in a merged tree $t_m$.
-	If the merge node candidate is valid in both trees, the candidate of the larger tree is replaced by the root of the smaller tree. 
+	\item For each node in $N_0$ and $N_1$ it is checked if it is a valid merge candidate.
+	This is done by traversing the corresponding tree ($t_0$ or $t_1$) from root node to leaves following Algorithm \ref{al:trav}.
+	If the node is reached that way, it is considered a valid merge candidate.
+	The found merge node is then replaced by the root of the other tree resulting in a merged tree $t_m$.
+	If more than one valid candidate exists, the candidate corresponding to the larger tree is replaced by the root of the smaller tree.
+	If both trees are of the same size, the candidate of $t_0$ is chosen.  
+	See Figure \ref{fig:subtree_1} for an example.
 	\item $t_m$ is inserted at the end of $L$.
 	\item The merge process is continued until there is only a single node left in $L$.
 	Since the model to reconstruct is by definition connected, the merge process always terminates.
 \end{enumerate}
+
+\begin{figure}[htb]
+	\centering		
+	\begin{subfigure}[b]{0.6\linewidth}		
+		\includegraphics[width=\textwidth]{figures/subtree_0.pdf}	
+		\caption{}			
+		\label{fig:subtree_0}	
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\textwidth]{figures/subtree_1.pdf}
+		\caption{}			
+		\label{fig:subtree_1}
+	\end{subfigure}	
+	\vskip\baselineskip
+	\caption{(\protect\subref{fig:subtree_0}) Two merge trees ($t_0$ left, $t_1$ right) with a largest common subtree (green). $N_0$ contains the purple node, $N_1$ the orange node. (\protect\subref{fig:subtree_1}) The merged tree $t_m$.}
+\end{figure}
+
 The merge process has an asymptotic computational complexity of $\mathcal{O}(\vert L \vert^2)$ since in worst case $L$ has to be completely traversed for each merge.
 Note that the proposed algorithm does not guarantee to find the $t_m$ with the minimal number of nodes possible. 
 
@@ -274,6 +334,7 @@ Note that the proposed algorithm does not guarantee to find the $t_m$ with the m
 \caption{Checks if node \textit{node} is a valid merge candidate in tree $t$.}\label{al:trav}
 \end{algorithm}
 
+
 \begin{figure}[htb]
 	\centering
 	\begin{subfigure}[b]{\linewidth}
@@ -299,41 +360,6 @@ Note that the proposed algorithm does not guarantee to find the $t_m$ with the m
 	\end{subfigure}
 	\vskip\baselineskip
 	\caption{Merge strategies.}\label{fig:wmerge}
-\end{figure}
-
-\begin{figure}[htb]
-	\centering
-	\begin{subfigure}[b]{0.3\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_0.pdf}
-		\caption{Primitives.}
-		\label{fig:pipe0}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.3\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_1.pdf}
-		\caption{\ac{PO}-graph.}
-		\label{fig:pipe1}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.30\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_2.pdf}
-		\caption{Partitions.}
-		\label{fig:pipe2}
-	\end{subfigure}
-	\vskip\baselineskip
-	\begin{subfigure}[b]{0.633333\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_4.pdf}
-		\caption{Per-partition trees.}
-		\label{fig:pipe3}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.30\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_3.pdf}
-		\caption{Merged tree.}
-		\label{fig:pipe4}
-	\end{subfigure}
-	\vskip\baselineskip	
-	\caption{The search space partitioning pipeline.}\label{fig:pipeline_s}
 \end{figure}
 
 
