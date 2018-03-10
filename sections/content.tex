@@ -71,7 +71,7 @@ where $h$ is a small constant step size.
 \end{figure}
 
 \subsection{Boolean Set-Operations}
-The set-operations intersection, union, complement and subtraction can be implemented using $\min-$ and $\max$-functions \cite{ricci197constgeo}: 
+The set-operations intersection, union, complement and subtraction are implemented using $\min-$ and $\max$-functions \cite{ricci197constgeo}: 
 \begin{itemize}
 	\item Intersection: $\cap(S_1,S_2) := \min(f_{S_1}, f_{S_2})$
 	\item Union: $\cup(S_1,S_2) := \max(f_{S_1}, f_{S_2})$
@@ -336,16 +336,16 @@ Two models were used with different point sampling rates, see Table \ref{tab::mo
 	\hline
 	 & \textbf{M0} & \textbf{M1} & \textbf{M2} \\
 	\hline
-	\# Primitives & 17 & 4 & \\
+	\# Primitives & 17 & 4 & 29 \\
 	\hline
-	\# Points (low) & 11.3k & 9.3k &\\
+	\# Points (low) & 11.3k & 9.3k & 10.9k\\
 	\hline
-	\# Points (high) & 156.4k & 158.4k &\\
+	\# Points (high) & 156.4k & 158.4k & 155.4k\\
 	\hline
-	\# Cliques & (0,8,4,0,1,1) & (0,0,2) &  (0,0,0,x)\\
+	\# Partitions & (0,8,4,0,1,1) & (0,0,2) &  (0,0,0,12)\\
 	\hline	
 	\end{tabular}
-	\caption{Details on evaluated models. 'low' and 'high' indicate different sampling rates. Numbers of cliques are depicted per clique size. First position in parantheses indicate number of cliques of size $1$ and so on.}
+	\caption{Details on evaluated models. 'low' and 'high' indicate different sampling rates. Numbers of partitions are depicted per partition size. First position in parantheses indicate number of partitions of size $1$ and so on.}
 	\label{tab::models}
 \end{table}
 Baseline is the \ac{GA} approach proposed in \cite{fayolle2016evolutionary} and described in Chapter \ref{ch:ga} The parameter set used for both, baseline and partitioning scheme, is listed in Table \ref{tab:gaparams}.
@@ -401,6 +401,8 @@ For SMTGA, the task of ranking a population can be splitted in $n_T$ parts, with
 For per-partition variants, granularity is determined by the (potentially lower) number of partitions and per-partition execution times may vary a lot dependent on partition sizes. 
 \\
 See Figure \ref{fig:graph1} for an overview of the results of the complete performance experiment.
+Results for per-partition variants do not show timings for different pipeline steps since in all experiments, per-partition \ac{CSG}-tree extraction is by far the most dominant factor. 
+The summarized time measures for \ac{PO}-tree generation, search space partitioning and tree merge make less then $1\permil$ of the total runtime.
 \\
 Figure \ref{fig:graph2} contains average depths and sizes of resulting trees for baseline and partitioning variants.
 For the latter, tree depths have increased by $50$-$155\%$ compared to the input tree, while for baseline approaches, an increase of only $0$-$80\%$ is visible.
@@ -410,7 +412,12 @@ This adverse behavior of partitioning variants is due to the final merge step:
 In each merge iteration, not those two trees with the largest common subtree of all trees in the merge list are merged but those that are neighbors in the merge list and have a common subtree of at least size $1$.
 Since focus is on performance, this is acceptable behavior.
 \\
-Figure \ref{fig:graph3} shows the dependency between point cloud size and corresponding computation times. TODO: discussion.
+Figure \ref{fig:graph3} depicts measurement results for the ratio
+\begin{equation} \label{eq:ratio}
+\frac{\#\text{points}_{high}}{\#\text{points}_{low}} : \frac{\text{duration}_{high}}{\text{duration}_{low}}
+\end{equation}
+which quantifies the dependency between point cloud size and corresponding computation times.
+It indicates that, for larger models (model $0$ and $2$), baseline approaches show super linear scaling behavior with respect to point cloud size, whereas partitioning approaches scale sublinearly. 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g1.pdf}
@@ -420,14 +427,14 @@ Figure \ref{fig:graph3} shows the dependency between point cloud size and corres
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g3.pdf}
-	\caption{Ratio between high-detail and low-detail point cloud size factor and corresponding timing factors for all models.}
+	\caption{Ratio between high-detail and low-detail point cloud size factor and corresponding timing factors for all models (see Equation \ref{eq:ratio}). The red line indicates perfectly linear scaling with respect to point cloud size.}
 	\label{fig:graph3}
 \end{figure}
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g2.pdf}
-	\caption{Average tree size and depth for baseline and search space partitioning method for model 1 and model 2 with high-detail sampling. Vertical black lines indicate standard deviation.}
+	\caption{Average tree size and depth for baseline and search space partitioning methods for all models with high-detail sampling. Vertical black lines indicate standard deviation.}
 	\label{fig:graph2}
 \end{figure}
 %%%%%%%%%%%%%%%%%%

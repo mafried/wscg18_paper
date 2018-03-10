@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  9 MAR 2018 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  10 MAR 2018 11:11
 entering extended mode
 **./main.tex
 (main.tex
@@ -254,6 +254,12 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\wasysym.sty"
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip62
@@ -284,6 +290,35 @@ LaTeX Info: Redefining \overline on input line 375.
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
+
+
+! LaTeX Error: Command \iint already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.635 ...d{\iint}{\DOTSI\protect\MultiIntegral{2}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \iiint already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.636 ...{\iiint}{\DOTSI\protect\MultiIntegral{3}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 \Mathstrutbox@=\box34
 \strutbox@=\box35
 \big@size=\dimen122
@@ -311,8 +346,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\acronym\acronym.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\acronym\acronym.sty"
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
@@ -359,19 +393,19 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 163.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 164.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -466,54 +500,59 @@ G,.JBIG2,.JB2,.eps]
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 176.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 177.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.0pt on input line 176.
+(Font)              scaled to size 10.0pt on input line 177.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <16> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 176.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 177.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.0pt on input line 176.
+(Font)              scaled to size 16.0pt on input line 177.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 17
-6.
+7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 17
-6.
+7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 17
-6.
+7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 17
-6.
+7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 176.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 177.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 176.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 176.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 176.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 177.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 176.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 177.
 
 (sections/abstract.tex) (sections/content.tex
 Package acronym Info: Label `acro:RE' newly defined as it shall be overridden
@@ -639,6 +678,17 @@ Package pdftex.def Info: figures/Praesentation1.pdf used on input line 68.
 
 Overfull \hbox (7.15225pt too wide) in paragraph at lines 68--69
  [][] 
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 74--75
+\T1/ptm/m/n/10 The set-operations in-ter-sec-tion, union, com-ple-ment
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 74--75
+\T1/ptm/m/n/10 and sub-trac-tion are im-ple-mented us-ing $[] \OMS/ztmcm/m/n/10
+  $ \T1/ptm/m/n/10 and
  []
 
 
@@ -781,42 +831,31 @@ File: figures/pipe_3.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/pipe_3.pdf used on input line 314.
 (pdftex.def)             Requested size: 66.1416pt x 66.14354pt.
 
+Overfull \hbox (2.7995pt too wide) in paragraph at lines 335--348
+ [][] 
+ []
+
 [4]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/g1.pdf, id=97, 406.68814pt x 252.95691pt>
-File: figures/g1.pdf Graphic file (type pdf)
- <use figures/g1.pdf>
-Package pdftex.def Info: figures/g1.pdf used on input line 416.
-(pdftex.def)             Requested size: 227.62206pt x 141.58156pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 416--417
- [][] 
- []
-
-<figures/g3.pdf, id=98, 390.73793pt x 253.23923pt>
-File: figures/g3.pdf Graphic file (type pdf)
- <use figures/g3.pdf>
-Package pdftex.def Info: figures/g3.pdf used on input line 422.
-(pdftex.def)             Requested size: 227.62206pt x 147.5203pt.
-
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 422--423
- [][] 
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 387--426
+Underfull \hbox (badness 3312) in paragraph at lines 387--416
 \T1/ptm/m/n/10 search space par-ti-tion-ing vari-ant (SMTGA). This
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 387--426
+Underfull \hbox (badness 2680) in paragraph at lines 387--416
 \T1/ptm/m/n/10 Search space par-ti-tion-ing with [][] par-al-leliza-tion
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 387--426
+Underfull \hbox (badness 1087) in paragraph at lines 387--416
+\T1/ptm/m/n/10 sum-ma-rized time mea-sures for [][]-tree gen-er-a-tion,
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 387--416
 \T1/ptm/m/n/10 trees, while base-line ap-proaches in-crease tree size
  []
 
@@ -860,18 +899,38 @@ le pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figures/pipe_3.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] <figures/g2.pdf, id=197, 373.81534pt x 252.95691pt>
-File: figures/g2.pdf Graphic file (type pdf)
- <use figures/g2.pdf>
-Package pdftex.def Info: figures/g2.pdf used on input line 429.
-(pdftex.def)             Requested size: 227.62206pt x 154.02943pt.
+>] <figures/g1.pdf, id=196, 406.68814pt x 252.95691pt>
+File: figures/g1.pdf Graphic file (type pdf)
+ <use figures/g1.pdf>
+Package pdftex.def Info: figures/g1.pdf used on input line 423.
+(pdftex.def)             Requested size: 227.62206pt x 141.58156pt.
+
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 423--424
+ [][] 
+ []
+
+<figures/g3.pdf, id=197, 390.73793pt x 253.23923pt>
+File: figures/g3.pdf Graphic file (type pdf)
+ <use figures/g3.pdf>
+Package pdftex.def Info: figures/g3.pdf used on input line 429.
+(pdftex.def)             Requested size: 227.62206pt x 147.5203pt.
 
 Overfull \hbox (7.15225pt too wide) in paragraph at lines 429--430
  [][] 
  []
 
+<figures/g2.pdf, id=198, 373.81534pt x 252.95691pt>
+File: figures/g2.pdf Graphic file (type pdf)
+ <use figures/g2.pdf>
+Package pdftex.def Info: figures/g2.pdf used on input line 436.
+(pdftex.def)             Requested size: 227.62206pt x 154.02943pt.
 
-LaTeX Warning: Citation `weber2010sharp' on page 6 undefined on input line 440.
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 436--437
+ [][] 
+ []
+
+
+LaTeX Warning: Citation `weber2010sharp' on page 6 undefined on input line 447.
 
 
 ) (main.bbl
@@ -914,19 +973,17 @@ dfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figures/g2.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->]) [7
-
-] (main.aux)
+>]) [7] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6429 strings out of 493323
- 94462 string characters out of 3139054
- 188864 words of memory out of 3000000
- 9771 multiletter control sequences out of 15000+200000
- 50923 words of font info for 80 fonts, out of 3000000 for 9000
+ 6608 strings out of 493323
+ 96303 string characters out of 3139054
+ 190471 words of memory out of 3000000
+ 9940 multiletter control sequences out of 15000+200000
+ 51565 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,21n,40p,386b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -941,10 +998,11 @@ TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/u
 syr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 305758 bytes).
+.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/wasy/wasy10.pfb>
+Output written on main.pdf (7 pages, 308561 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
+ 346 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
