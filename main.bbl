@@ -12,10 +12,26 @@ Coen Bron and Joep Kerbosch.
 \newblock Algorithm 457: finding all cliques of an undirected graph.
 \newblock {\em Communications of the ACM}, 16(9):575--577, 1973.
 
+\bibitem[BMV01]{BMV01}
+P.~Benk{\'o}, R.R. Martin, and T.~V{\'a}rady.
+\newblock {Algorithms for reverse engineering boundary representation models}.
+\newblock {\em Computer-Aided Design}, 33(11):839--851, 2001.
+
+\bibitem[BTS{\etalchar{+}}17]{berger2017survey}
+Matthew Berger, Andrea Tagliasacchi, Lee~M Seversky, Pierre Alliez, Gael
+  Guennebaud, Joshua~A Levine, Andrei Sharf, and Claudio~T Silva.
+\newblock A survey of surface reconstruction from point clouds.
+\newblock {\em Computer Graphics Forum}, 36(1):301--329, 2017.
+
 \bibitem[ES{\etalchar{+}}03]{eiben2003introduction}
 Agoston~E Eiben, James~E Smith, et~al.
 \newblock {\em Introduction to evolutionary computing}, volume~53.
 \newblock Springer, 2003.
+
+\bibitem[FO82]{flajolet1982TheAH}
+Philippe Flajolet and Andrew~M. Odlyzko.
+\newblock The average height of binary trees and other simple trees.
+\newblock {\em J. Comput. Syst. Sci.}, 25:171--213, 1982.
 
 \bibitem[FP16]{fayolle2016evolutionary}
 Pierre-Alain Fayolle and Alexander Pasko.
@@ -28,10 +44,20 @@ Richard Hartley and Andrew Zisserman.
 \newblock {\em Multiple view geometry in computer vision}.
 \newblock Cambridge university press, 2003.
 
+\bibitem[KH13]{KH13}
+M.~Kazhdan and H.~Hoppe.
+\newblock Screened poisson surface reconstruction.
+\newblock {\em ACM Trans. Graph.}, 32(3):29:1--29:13, July 2013.
+
 \bibitem[Mea82]{meagher1982Octree}
 Donald Meagher.
 \newblock Geometric modeling using octree encoding.
 \newblock {\em Computer Graphics and Image Processing}, 19(2):129 -- 147, 1982.
+
+\bibitem[Mit98]{mitchell1998introduction}
+Melanie Mitchell.
+\newblock {\em An introduction to genetic algorithms}.
+\newblock MIT press, 1998.
 
 \bibitem[MM65]{moon1965cliques}
 J.~W. Moon and L.~Moser.
@@ -42,6 +68,11 @@ J.~W. Moon and L.~Moser.
 Brad~L. Miller, Brad~L. Miller, David~E. Goldberg, and David~E. Goldberg.
 \newblock Genetic algorithms, tournament selection, and the effects of noise.
 \newblock {\em Complex Systems}, 9:193--212, 1995.
+
+\bibitem[OBA{\etalchar{+}}03]{OBATS03}
+Y.~Ohtake, A.~Belyaev, M.~Alexa, G.~Turk, and H.-P. Seidel.
+\newblock Multi-level partition of unity implicits.
+\newblock {\em ACM Trans. Graph.}, 22(3):463--470, 2003.
 
 \bibitem[RC11]{rusu20113d}
 Radu~Bogdan Rusu and Steve Cousins.
@@ -78,8 +109,12 @@ Vadim Shapiro and Donald~L Vossler.
 \bibitem[SWK07]{schnabel2007efficient}
 Ruwen Schnabel, Roland Wahl, and Reinhard Klein.
 \newblock Efficient ransac for point-cloud shape detection.
-\newblock In {\em Computer graphics forum}, volume~26, pages 214--226. Wiley
-  Online Library, 2007.
+\newblock {\em Computer graphics forum}, 26(2):214--226, 2007.
+
+\bibitem[VMC97]{VMC97}
+T.~Varady, R.R. Martin, and J.~Cox.
+\newblock {Reverse engineering of geometric models-an introduction}.
+\newblock {\em Computer-Aided Design}, 29(4):255--268, 1997.
 
 \bibitem[Wei09]{weiss2009geometry}
 Daniel Weiss.

@@ -7,7 +7,7 @@ It allows for convenient model editing based on real-world physical objects, thu
 \\
 An expressive and intuitive model representation scheme heavily used in solid modeling is \ac{CSG}.
 It describes complex rigid solids by a binary tree with regularized boolean set-operations (eg. union, intersection, subtraction) as inner nodes and primitive solids (e.g. cubes, spheres, cylinders and cones) as leaves. 
-This tree is also known as the model's Construction Tree.
+This tree is also known as a model's Construction Tree.
 \\
 Due to the popularity of \ac{CSG} in \ac{CAD}, it is desirable to have tools at hand that are able to reliably recover a model's \ac{CSG}-tree from its point cloud representation stemming from sensor recordings.
 \\
@@ -24,40 +24,87 @@ The basic idea of the described acceleration scheme is to exploit spatial relati
 Primitives that do not overlap spatially are not considered to be operands of a \ac{CSG}-operation.
 This knowledge can be used to partition overlapping primitives and to compute partial per-partition results that are later on merged to a single \ac{CSG}-tree. 
 \\
-In particular, this paper makes the following contributions in the field of \ac{GA}-based \ac{CSG}-tree recovery from point clouds: 
+In particular, this paper makes the following contributions:
+% in the field of \ac{GA}-based \ac{CSG}-tree recovery from point clouds: 
 \begin{itemize}
 \item An acceleration scheme based on spatial search space partitioning together with a robust merge mechanism.
 \item A description and analysis of parallelization strategies for the proposed algorithms.
 \end{itemize}  
 The paper is structured as follows: (TODO)
 \copyrightspace
+
+%%%%%%%%%%%%%%%%%%%%
+%%% Related Work %%%
+%%%%%%%%%%%%%%%%%%%%
+\section{Related Works}
+This work is related to different domains such as surface reconstruction from discrete point clouds, reverse engineering of solid models or conversion from B-Rep to CSG. 
+In this section, we briefly list some related works in these domains. 
+
+\paragraph{Surface reconstruction}
+The problem of reconstructing a surface from a discrete point cloud has been the subject of lots of attention in computer graphics. 
+The most popular methods include fitting implicit surfaces such as \cite{OBATS03}, or Poisson surface reconstruction \cite{KH13} among others. 
+The recent work of Berger et al. \cite{berger2017survey} presents a wide survey of the topic.
+Using these methods, the reconstructed objects lack information that can be used for inspection or re-use of the object in further modeling. 
+
+\paragraph{Reverse engineering, and B-Rep to CSG conversion}
+The goal of reverse engineering is the creation of consistent geometric models from point cloud data \cite{VMC97,BMV01}. They usually output B-Rep models 
+made of parametric patches.
+\\
+%\paragraph{B-Rep to CSG conversion}
+The problem of B-Rep to CSG conversion was first investigated in 
+two-dimension for linear polygons, then 
+later extended by Shapiro for handling curved polygons \cite{shapiro1991efficient, shapiro2001convex}. 
+The extension to three-dimensional objects was initially solved 
+by Shapiro and Vossler in 
+\cite{shapiro1991construction, shapiro1993separation} 
+and later improved by 
+Buchele and Crawford in \cite{buchele2004three}. 
+These works rely on the fact that surfaces are composed of quadric surface patches. 
+%(for computing separators, for factoring dominating halfspaces). 
+One issue of these algorithms is that their worst time complexity can be 
+
+exponential (the authors in \cite{buchele2004three} states a cubic 
+time complexity in practice, while remarking that the worst time complexity could be exponential). 
+Another issue is the handling of inexact representations. 
+These methods work under the assumption that the patches form a clean partition of the 
+target solid. However, in practice we are dealing with input point clouds that are potentially 
+noisy, contain holes, or have additional details and thus the fitted primitives may not fit perfectly. 
+This would impact the cellular classification on which these methods rely. 
+
+\paragraph{Point cloud to CSG reverse construction}
+Close to our work are methods that handles noisy and incomplete point clouds 
+such as \cite{schnabel2007efficient} for fitting primitives and methods that try to convert them to higher level representation such as \cite{fayolle2016evolutionary}. See also \cite[Sections~7 and 8]{berger2017survey} for further references. 
+One of our goals in this work is to improve the running time of the evolutionary algorithm used in \cite{fayolle2016evolutionary} via geometric consideration (the overlapping in space of primitives).
+
 %%%%%%%%%%%%%%%%%%
 %%% Background %%%
 %%%%%%%%%%%%%%%%%%
 \section{Background}
 \subsection{Point Cloud to \ac{CSG}-Tree Pipeline} 
-The extraction of a \ac{CSG}-Tree from a point cloud poses a complex problem which is usually solved with a processing pipeline that comprises of the following steps:  
+The extraction of a \ac{CSG}-Tree from a point cloud poses a complex problem which is usually solved with a processing pipeline that comprises the following steps:  
 \begin{enumerate}
-	
-	\item \textbf{Point cloud generation \& pre-processing:} Point clouds are generated by laser scanners or tactile measurement devices. 
+ 
+\item \textbf{Point cloud generation \& pre-processing:} Point clouds are generated by laser scanners or tactile measurement devices. 
 Other techniques use photogrammetric algorithms to gather depth information from (un-)calibrated camera images \cite{hartley2003multiple}.
 Measured point clouds usually contain significant amounts of noise and outliers. 
 These can be trimmed from the data-set using e.g. statistical approaches  \cite{rusu20113d}.
-\\
+%\\
 \item \textbf{Point cloud segmentation \& primitive fitting:} The point cloud must be segmented and primitive parameters be fitted to the corresponding points. Approaches that fulfill both tasks for simple geometric shapes are e.g. specialized variants of the \ac{RANSAC} technique \cite{schnabel2007efficient}.
-\\
-\item \textbf{\ac{CSG}-tree generation:} TODO
-\\
+%\\
+\item \textbf{\ac{CSG}-tree generation:} \ac{CSG}-tree generation can be done with methods based on algorithmic geometry such as \cite{shapiro1993separation, buchele2004three}, or via evolutionary approaches such as \cite{fayolle2016evolutionary} for handling inexact representations.
+%\\
 \item \textbf {\ac{CSG}-tree optimization:} The resulting \ac{CSG}-tree might not be optimal in terms of size and depth.
 Additional optimization techniques can simplify the tree structure \cite{weiss2009geometry, shapiro1991construction}. 
 \end{enumerate}
-	
+
 \subsection{Primitive Description}
 Primitives are basic shapes located at \ac{CSG}-tree leaves. 
-A primitive $p$ is fully described by its totally differentiable signed distance function $f_p: \mathbb{R}^3 \mapsto \mathbb{R}$.
+A primitive $p$ is fully described by its 
+%totally differentiable 
+signed distance function $f_p: \mathbb{R}^3 \mapsto \mathbb{R}$.
 The surface of $p$ is implicitly defined by the zero-set of $f_p$: $\{x \in \mathbb{R}^3 : f_p(x)=0\}$.
 Its surface normal at point $x \in \mathbb{R}^3$ is given by the gradient $\nabla f_p(x)$.
-If the gradient does not exist at $x$ or is to expensive to compute, it can be approximated using the method of central differences:
+If the gradient does not exist at $x$ or is too expensive to compute, it can be approximated using the method of central differences:
 \begin{equation}
 \nabla f_p(x) \approx \frac{f_p(x - h) + f_p(x + h)}{2h},
 \end{equation}
@@ -90,7 +137,8 @@ The new population is then filled with the offspring together with selected surv
 This procedure is repeated until a certain termination criteria is met (termination). 
 See Figure \ref{fig:evo} for an overview.
 \\
-Evolutionary Algorithms are especially useful for solving combinatorial optimization problems like the proposed formulation of the \ac{CSG}-tree extraction problem \cite{eiben2003introduction, fayolle2016evolutionary}.
+Evolutionary Algorithms are especially useful for solving combinatorial optimization problems \cite{eiben2003introduction}.
+%like the proposed formulation of the \ac{CSG}-tree extraction problem \cite{eiben2003introduction, fayolle2016evolutionary}.
 
 \begin{figure}[htb]
 	\centering
@@ -98,30 +146,6 @@ Evolutionary Algorithms are especially useful for solving combinatorial optimiza
 	\caption{The optimization process described by an Evolutionary Algorithm (derived from \cite{eiben2003introduction}).}
 	\label{fig:evo}
 \end{figure}
-
-%%%%%%%%%%%%%%%%%%%%
-%%% Related Work %%%
-%%%%%%%%%%%%%%%%%%%%
-\section{Related Work}
-The problem under consideration is related to the problem of boundary representation (B-Rep) 
-to CSG conversion. 
-It was first investigated in two-dimensional space for linear polygons, then 
-later extended by Shapiro for handling curved polygons \cite{shapiro1991efficient, shapiro2001convex}. 
-The extension to three-dimensional objects was initially solved 
-by Shapiro and Vossler in \cite{shapiro1991construction, shapiro1993separation}. 
-An improved algorithm was later proposed by 
-Buchele and Crawford in \cite{buchele2004three}. 
-These methods rely on the fact that surfaces are composed of quadric surface patches 
-(for computing separators, for factoring dominating halfspaces). 
-The algorithm described in \cite{shapiro1991construction} has exponential time complexity.
-% I don't understand what the complexity of shapiro1993separation is? 
-The algorithm described in \cite{buchele2004three} has cubic (in the number of primitives) time complexity, however the authors remark that the worst time complexity could be exponential. 
-\\
-Another issue of these approaches is the handling of inexact representations. 
-The methods work under the assumption that the patches form a clean partition of the 
-target solid. However, in practice we are dealing with input point-clouds that are potentially 
-noisy, contain holes, or have additional details and thus the fitted primitives may not fit perfectly. 
-This would impact the cellular classification on which the methods described in \cite{shapiro1991construction, shapiro1993separation, buchele2004three} rely. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Problem Statement %%%
@@ -231,7 +255,7 @@ The inaccurate the approximation, the less partitions will emerge.
 \subsection{Per-Partition \ac{CSG}-Tree Extraction}
 \label{ch:ga}
 With known partitions, \ac{CSG}-tree extraction is conducted for each partition separately in a divide-and-conquer manner.
-As basic building block for all acceleration schemes proposed in this paper serves a variant of the \ac{GA} described in \cite{fayolle2016evolutionary} with the objective function
+As a basic building block for all acceleration schemes proposed in this paper serves a variant of the \ac{GA} described in \cite{fayolle2016evolutionary} with the objective function
 \begin{equation}
 \label{eq:of}
 E(t, S) := \sum_{i=1}^{|S|}{e^{-d_i(t)^2}+e^{-\theta_i(t)^2}}-\alpha \cdot size(t),
@@ -244,6 +268,13 @@ The first term in Equation \ref{eq:of} estimates how close the surface induced b
 The third term penalizes large trees.
 \\
 Initially, the population $T_0$ is filled with $n_T$ randomly generated trees with a height $\le h_{max}$. 
+For the maximum tree height, the approximation  
+\begin{equation}
+h_{max}\approx \sqrt{\pi \cdot \vert O \vert}
+\end{equation}
+is used. 
+It is based on the average tree height in binary trees for a given tree size \cite{flajolet1982TheAH} and worked well in all conducted experiments. 
+\\
 Each \ac{GA} iteration $i$ contains the following steps:
 \begin{enumerate}
 \item The population of the last iteration $T_{i-1}$ is ranked according to Equation \ref{eq:of}.
@@ -255,9 +286,9 @@ In the mutation process a randomly chosen subtree is replaced with a new randoml
 With a probability of $1-\gamma_{mu}$, the whole tree is replaced with a randomly generated tree.
 \item The termination condition is met, if the score of the best \ac{CSG}-tree candidate of an iteration does not improve over $n_{tc}$ iterations.  	 
 \end{enumerate}  
-The main difference of the described \ac{GA} variant compared to the \ac{GA} proposed in \cite{fayolle2016evolutionary} is the use of truncated solid primitives instead of implicitly defined surfaces of infinite extend in at least one dimension (eg. planes, cylinders). 
-This simplifies the algorithm since no additional limiting primitives must be introduced prior to extraction.
-\\
+%The main difference of the described \ac{GA} variant compared to the \ac{GA} proposed in \cite{fayolle2016evolutionary} is the use of truncated solid primitives instead of implicitly defined surfaces of infinite extend in at least one dimension (eg. planes, cylinders). 
+%This simplifies the algorithm since no additional limiting primitives must be introduced prior to extraction.
+%\\
 The most computational expensive step in \ac{GA}-based \ac{CSG}-tree recovery is the evaluation of Equation \ref{eq:of} for each element of a candidate-set. 
 Since evaluations can be conducted for each candidate independently, parallel processing schemes can be efficiently applied.  
 In addition, The solution space partitioning allows for an additional per-partition parallelization strategy.
@@ -339,23 +370,21 @@ Note that the proposed algorithm does not guarantee to find the $t_m$ with the m
 	\centering
 	\begin{subfigure}[b]{\linewidth}
   		\centering
-		\includegraphics[width=0.3\linewidth]{figures/wm_0.pdf}
+		\includegraphics[width=0.6\linewidth]{figures/wm_0.pdf}
 		\hfill
 		\includegraphics[width=0.3\linewidth]{figures/wm_1.pdf}
-		\hfill
-		\includegraphics[width=0.3\linewidth]{figures/wm_2.pdf}		
-		\caption{Simple tree merge using union over all clique trees. Erroneous geometry in red.}
+			
+		\caption{Wrong tree merge using union over all partition trees. Erroneous geometry in red.}
 		\label{fig:munion}
 	\end{subfigure}
 	\vskip\baselineskip
 	\begin{subfigure}[b]{\linewidth}
 		\centering
-		\includegraphics[width=0.3\linewidth]{figures/wm_3.pdf}
+		\includegraphics[width=0.3\linewidth]{figures/wm_2.pdf}
 		\hfill
-		\includegraphics[width=0.3\linewidth]{figures/wm_4.pdf}
+		\includegraphics[width=0.6\linewidth]{figures/wm_3.pdf}
 		\hfill
-		\includegraphics[width=0.3\linewidth]{figures/wm_5.pdf}		
-		\caption{Tree merge using primitive splitting.}
+		\caption{Correct tree merge using union over all partition trees with primitive splitting (green curve).}
 		\label{fig:msplitting}
 	\end{subfigure}
 	\vskip\baselineskip
@@ -370,9 +399,9 @@ Note that the proposed algorithm does not guarantee to find the $t_m$ with the m
 \section{Evaluation}
 \label{ch:eval}
 The proposed partitioning scheme was evaluated on a laptop with quad core CPU and $16$GB of RAM.
-Point-clouds were generated by sampling a model surface induced by a pre-defined \ac{CSG}-tree that served as ground-truth. Gaussian noise was added to sampling points to simulate measurement errors.
+Point clouds were generated by sampling a model surface induced by a pre-defined \ac{CSG}-tree that served as ground-truth. Gaussian noise was added to sampling points to simulate measurement errors.
 \\
-Two models were used with different point sampling rates, see Table \ref{tab::models} for details. 
+Three models were used with different point sampling rates, see Table \ref{tab::models} for details. 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|}
@@ -442,7 +471,7 @@ TODO: Add discussion for model 2.
 Search space partitioning with \ac{GA} parallelization (SMTGA) is in general faster than their per-partition counterparts (SMTP, SMTPGA) for all models.
 This is due to the granularity and regularity of the parallelization: 
 For SMTGA, the task of ranking a population can be splitted in $n_T$ parts, with each part having similar execution times.
-For per-partition variants, granularity is determined by the (potentially lower) number of partitions and per-partition execution times may vary a lot dependent on partition sizes. 
+For per-partition variants, granularity is determined by the (potentially lower) number of partitions and per-partition execution times may vary a lot depending on partition sizes. 
 \\
 See Figures \ref{fig:graph1} and \ref{fig:graph4} for an overview of the results of the complete performance experiment.
 Results for per-partition variants do not show timings for different pipeline steps since in all experiments, per-partition \ac{CSG}-tree extraction is by far the most dominant factor. 
@@ -487,12 +516,13 @@ It indicates that, for larger models (model $0$ and $2$), the fastest partitioni
 	\caption{Average tree size and depth for baseline and search space partitioning methods for all models with high-detail sampling. Vertical black lines indicate standard deviation.}
 	\label{fig:graph2}
 \end{figure}
+
 %%%%%%%%%%%%%%%%%%
 %%% Conclusion %%%
 %%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 TODO: Summary
 \\
-The used \ac{GA} might be implement for massively parallel computing hardware and combined with the proposed partitioning approach. 
+The used \ac{GA} might be implemented for massively parallel computing hardware and combined with the proposed partitioning approach. 
 In addition, point cloud filtering based on sharp feature detection \cite{weber2010sharp} could further increase performance.
 A decreased tree size in the partitioning approach could be achieved by improving the merge process.
