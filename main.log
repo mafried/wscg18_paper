@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  11 MAR 2018 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  12 MAR 2018 15:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -782,13 +782,6 @@ File: figures/wm_3.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/wm_3.pdf used on input line 385.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
-Overfull \hbox (2.7995pt too wide) in paragraph at lines 407--420
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -798,68 +791,65 @@ figures/wm_1.pdf> <./figures/wm_2.pdf
 pdfTeX warning: pdflatex.exe (file ./figures/wm_2.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 > <./figures/wm_3.pdf>]
-Underfull \hbox (badness 2680) in paragraph at lines 459--489
+Underfull \hbox (badness 1924) in paragraph at lines 472--495
+\T1/ptm/m/n/10 equally dis-tributed size (all con-tain $\OT1/ztmcm/m/n/10 4$ \T
+1/ptm/m/n/10 prim-i-tives).
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 472--495
 \T1/ptm/m/n/10 Search space par-ti-tion-ing with [][] par-al-leliza-tion
  []
 
-
-Underfull \hbox (badness 1092) in paragraph at lines 459--489
-\T1/ptm/m/n/10 trees, while base-line ap-proaches in-crease tree size
- []
-
-<figures/g1.pdf, id=120, 406.68814pt x 253.23923pt>
+[6] <figures/g1.pdf, id=124, 406.68814pt x 253.23923pt>
 File: figures/g1.pdf Graphic file (type pdf)
  <use figures/g1.pdf>
-Package pdftex.def Info: figures/g1.pdf used on input line 496.
+Package pdftex.def Info: figures/g1.pdf used on input line 514.
 (pdftex.def)             Requested size: 227.62206pt x 141.73958pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 496--497
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 514--515
  [][] 
  []
 
-<figures/g4.pdf, id=121, 400.30492pt x 253.23923pt>
+<figures/g4.pdf, id=125, 400.30492pt x 253.23923pt>
 File: figures/g4.pdf Graphic file (type pdf)
  <use figures/g4.pdf>
-Package pdftex.def Info: figures/g4.pdf used on input line 502.
+Package pdftex.def Info: figures/g4.pdf used on input line 520.
 (pdftex.def)             Requested size: 227.62206pt x 143.99622pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 502--503
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 520--521
  [][] 
  []
 
-<figures/g3.pdf, id=122, 397.12115pt x 253.23923pt>
+<figures/g3.pdf, id=126, 397.12115pt x 253.23923pt>
 File: figures/g3.pdf Graphic file (type pdf)
  <use figures/g3.pdf>
-Package pdftex.def Info: figures/g3.pdf used on input line 508.
+Package pdftex.def Info: figures/g3.pdf used on input line 526.
 (pdftex.def)             Requested size: 227.62206pt x 145.15546pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 508--509
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 526--527
  [][] 
  []
 
-<figures/g2.pdf, id=123, 373.81534pt x 252.95691pt>
+<figures/g2.pdf, id=127, 373.81534pt x 252.95691pt>
 File: figures/g2.pdf Graphic file (type pdf)
  <use figures/g2.pdf>
-Package pdftex.def Info: figures/g2.pdf used on input line 515.
+Package pdftex.def Info: figures/g2.pdf used on input line 533.
 (pdftex.def)             Requested size: 227.62206pt x 154.02943pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 515--516
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 533--534
  [][] 
  []
 
 
-LaTeX Warning: Citation `weber2010sharp' on page 6 undefined on input line 527.
+LaTeX Warning: Citation `weber2010sharp' on page 7 undefined on input line 545.
 
 
-) (main.bbl [6 <./figures/g1.pdf>]
-Underfull \hbox (badness 1259) in paragraph at lines 32--35
-[]\T1/ptm/m/n/10 Philippe Fla-jo-let and An-drew M. 
- []
+) (main.bbl [7 <./figures/g1.pdf> <./figures/g4.pdf
 
-
-Underfull \vbox (badness 2961) has occurred while \output is active []
-
- [7 <./figures/g4.pdf> <./figures/g3.pdf
+pdfTeX warning: pdflatex.exe (file ./figures/g4.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./figures/g3.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/g3.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -867,9 +857,16 @@ dfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figures/g2.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->]) [8
+>]
+Underfull \hbox (badness 1259) in paragraph at lines 32--35
+[]\T1/ptm/m/n/10 Philippe Fla-jo-let and An-drew M. 
+ []
 
-] (main.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [8]
+(main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -877,11 +874,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  6634 strings out of 493323
  96653 string characters out of 3139054
- 187559 words of memory out of 3000000
+ 189559 words of memory out of 3000000
  9965 multiletter control sequences out of 15000+200000
  51565 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,21n,49p,386b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,21n,49p,406b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -896,9 +893,9 @@ syr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/wasy/wasy10.pfb>
-Output written on main.pdf (8 pages, 322118 bytes).
+Output written on main.pdf (8 pages, 322834 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
+ 306 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
