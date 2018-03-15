@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  14 MAR 2018 20:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  15 MAR 2018 19:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -393,19 +393,19 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 164.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 167.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -500,59 +500,59 @@ G,.JBIG2,.JB2,.eps]
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 177.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 180.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.0pt on input line 177.
+(Font)              scaled to size 10.0pt on input line 180.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <16> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 177.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 180.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.0pt on input line 177.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 17
-7.
+(Font)              scaled to size 16.0pt on input line 180.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 18
+0.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 17
-7.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 18
+0.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 17
-7.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 18
+0.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 17
-7.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 18
+0.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 177.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 180.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 180.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 180.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 177.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 180.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 180.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 177.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 180.
 
 (sections/abstract.tex) (sections/content.tex
 Package acronym Info: Label `acro:RE' newly defined as it shall be overridden
@@ -624,40 +624,43 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+
+Underfull \vbox (badness 1668) has occurred while \output is active []
+
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 44.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 51.
 
-Underfull \hbox (badness 1052) in paragraph at lines 51--73
+Underfull \hbox (badness 1052) in paragraph at lines 58--80
 \T1/ptm/m/n/10 in [[], []] and later im-proved by Buchele
  []
 
 Package acronym Info: Label `acro:RANSAC' newly defined as it shall be overridd
 en
-although it is yet undefined on input line 91.
+although it is yet undefined on input line 99.
 [2]
-Underfull \hbox (badness 1082) in paragraph at lines 120--121
+Underfull \hbox (badness 1082) in paragraph at lines 128--129
 \T1/ptm/m/n/10 The set-operations in-ter-sec-tion, union, com-ple-ment
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 120--121
+Underfull \hbox (badness 1383) in paragraph at lines 128--129
 \T1/ptm/m/n/10 and sub-trac-tion are im-ple-mented us-ing $[] \OMS/ztmcm/m/n/10
   $ \T1/ptm/m/n/10 and
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 127--129
+Underfull \hbox (badness 4229) in paragraph at lines 135--137
 \T1/ptm/m/n/10 where $\OML/ztmcm/m/it/10 S[]$ \T1/ptm/m/n/10 is the solid cor-r
 e-spond-ing to the set
  []
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 127--129
+Underfull \hbox (badness 3199) in paragraph at lines 135--137
 \OMS/ztmcm/m/n/10 f\OML/ztmcm/m/it/10 x \OMS/ztmcm/m/n/10 2 \U/msb/m/n/10 R[] \
 OT1/ztmcm/m/n/10 : \OML/ztmcm/m/it/10 f[] \OMS/ztmcm/m/n/10  \OT1/ztmcm/m/n/10
  0\OMS/ztmcm/m/n/10 g$ \T1/ptm/m/n/10 ($\OML/ztmcm/m/it/10 i \OT1/ztmcm/m/n/10 
@@ -665,150 +668,136 @@ OT1/ztmcm/m/n/10 : \OML/ztmcm/m/it/10 f[] \OMS/ztmcm/m/n/10  \OT1/ztmcm/m/n/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 \T1/ptm/m/n/10 ing, the con-sid-ered boolean set-operations are
  []
 
-<figures/evo.pdf, id=18, 462.72874pt x 262.9825pt>
+<figures/evo.pdf, id=15, 462.72874pt x 262.9825pt>
 File: figures/evo.pdf Graphic file (type pdf)
  <use figures/evo.pdf>
-Package pdftex.def Info: figures/evo.pdf used on input line 145.
+Package pdftex.def Info: figures/evo.pdf used on input line 153.
 (pdftex.def)             Requested size: 204.85846pt x 116.42693pt.
 
-<figures/pipe_0.pdf, id=19, 305.14pt x 306.14375pt>
+<figures/pipe_0.pdf, id=16, 305.14pt x 306.14375pt>
 File: figures/pipe_0.pdf Graphic file (type pdf)
  <use figures/pipe_0.pdf>
-Package pdftex.def Info: figures/pipe_0.pdf used on input line 184.
+Package pdftex.def Info: figures/pipe_0.pdf used on input line 194.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
-<figures/pipe_1.pdf, id=20, 305.14pt x 306.14375pt>
+<figures/pipe_1.pdf, id=17, 305.14pt x 306.14375pt>
 File: figures/pipe_1.pdf Graphic file (type pdf)
  <use figures/pipe_1.pdf>
-Package pdftex.def Info: figures/pipe_1.pdf used on input line 190.
+Package pdftex.def Info: figures/pipe_1.pdf used on input line 200.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 Package acronym Info: Label `acro:PO' newly defined as it shall be overridden
-although it is yet undefined on input line 191.
+although it is yet undefined on input line 201.
 
-<figures/pipe_2.pdf, id=21, 305.14pt x 306.14375pt>
+<figures/pipe_2.pdf, id=18, 305.14pt x 306.14375pt>
 File: figures/pipe_2.pdf Graphic file (type pdf)
  <use figures/pipe_2.pdf>
-Package pdftex.def Info: figures/pipe_2.pdf used on input line 196.
+Package pdftex.def Info: figures/pipe_2.pdf used on input line 206.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
-<figures/pipe_4.pdf, id=22, 605.26125pt x 305.14pt>
+<figures/pipe_4.pdf, id=19, 605.26125pt x 305.14pt>
 File: figures/pipe_4.pdf Graphic file (type pdf)
  <use figures/pipe_4.pdf>
-Package pdftex.def Info: figures/pipe_4.pdf used on input line 202.
+Package pdftex.def Info: figures/pipe_4.pdf used on input line 212.
 (pdftex.def)             Requested size: 139.63042pt x 70.3949pt.
 
-<figures/pipe_3.pdf, id=23, 304.13625pt x 305.14pt>
+<figures/pipe_3.pdf, id=20, 304.13625pt x 305.14pt>
 File: figures/pipe_3.pdf Graphic file (type pdf)
  <use figures/pipe_3.pdf>
-Package pdftex.def Info: figures/pipe_3.pdf used on input line 208.
+Package pdftex.def Info: figures/pipe_3.pdf used on input line 218.
 (pdftex.def)             Requested size: 66.1416pt x 66.3581pt.
-Package acronym Info: Label `acro:AABB' newly defined as it shall be overridden
-
-although it is yet undefined on input line 222.
 Package acronym Info: Label `acro:OBB' newly defined as it shall be overridden
-although it is yet undefined on input line 222.
+although it is yet undefined on input line 232.
 
-Underfull \hbox (badness 1406) in paragraph at lines 218--225
-\T1/ptm/m/n/10 ori-en-ta-tion and ge-o-met-ric shape of the prim-i-tives,
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 218--225
-\T1/ptm/m/n/10 be ap-prox-i-mated with sim-pler hull vo-lu-mina like
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 218--225
-\T1/ptm/m/n/10 us-ing hi-er-ar-chi-cal space par-ti-tion-ing schemes like
- []
-
-[3 <./figures/evo.pdf> <./figures/pipe_0.pdf> <./figures/pipe_1.pdf> <./figures
-/pipe_2.pdf> <./figures/pipe_4.pdf> <./figures/pipe_3.pdf>]
+[3 <./figures/evo.pdf>]
 Package acronym Info: Label `acro:BKA' newly defined as it shall be overridden
-although it is yet undefined on input line 233.
+although it is yet undefined on input line 243.
 
-Underfull \hbox (badness 2726) in paragraph at lines 226--240
-\T1/ptm/m/n/10 ex-per-i-men-tally [[]] that com-pu-ta-tion times of
- []
-
-<figures/right_part.pdf, id=54, 381.99901pt x 482.94714pt>
+<figures/right_part.pdf, id=30, 381.99901pt x 482.94714pt>
 File: figures/right_part.pdf Graphic file (type pdf)
 
 <use figures/right_part.pdf>
-Package pdftex.def Info: figures/right_part.pdf used on input line 244.
+Package pdftex.def Info: figures/right_part.pdf used on input line 254.
 (pdftex.def)             Requested size: 66.1416pt x 83.61797pt.
 
-<figures/wrong_part.pdf, id=55, 380.85074pt x 485.815pt>
+<figures/wrong_part.pdf, id=31, 380.85074pt x 485.815pt>
 File: figures/wrong_part.pdf Graphic file (type pdf)
 
 <use figures/wrong_part.pdf>
-Package pdftex.def Info: figures/wrong_part.pdf used on input line 249.
+Package pdftex.def Info: figures/wrong_part.pdf used on input line 259.
 (pdftex.def)             Requested size: 66.1416pt x 84.36655pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--261
+Underfull \hbox (badness 10000) in paragraph at lines 268--271
 \T1/ptm/m/n/10 With known par-ti-tions, [][]-tree ex-trac-tion is
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 284--289
+Underfull \hbox (badness 5563) in paragraph at lines 294--299
+\T1/ptm/m/n/10 from $\OML/ztmcm/m/it/10 T[]$ \T1/ptm/m/n/10 via Tour-na-ment Se
+-lec-tion [[]]
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 294--299
 \T1/ptm/m/n/10 can-di-dates ex-change ran-domly se-lected sub-trees
  []
 
-[4 <./figures/right_part.pdf> <./figures/wrong_part.pdf
+[4 <./figures/pipe_0.pdf> <./figures/pipe_1.pdf> <./figures/pipe_2.pdf> <./figu
+res/pipe_4.pdf> <./figures/pipe_3.pdf> <./figures/right_part.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/right_part.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./figures/wrong_part.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/wrong_part.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] <figures/subtree_0.pdf, id=77, 546.04pt x 275.0275pt>
+>] <figures/subtree_0.pdf, id=76, 546.04pt x 275.0275pt>
 File: figures/subtree_0.pdf Graphic file (type pdf)
 
 <use figures/subtree_0.pdf>
-Package pdftex.def Info: figures/subtree_0.pdf used on input line 327.
+Package pdftex.def Info: figures/subtree_0.pdf used on input line 337.
 (pdftex.def)             Requested size: 132.28322pt x 66.62483pt.
 
-<figures/subtree_1.pdf, id=78, 261.97874pt x 262.9825pt>
+<figures/subtree_1.pdf, id=77, 261.97874pt x 262.9825pt>
 File: figures/subtree_1.pdf Graphic file (type pdf)
 
 <use figures/subtree_1.pdf>
-Package pdftex.def Info: figures/subtree_1.pdf used on input line 333.
+Package pdftex.def Info: figures/subtree_1.pdf used on input line 343.
 (pdftex.def)             Requested size: 66.1416pt x 66.39151pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 365.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 375.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 366.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 376.
 
-<figures/wm_0.pdf, id=79, 605.26125pt x 305.14pt>
+<figures/wm_0.pdf, id=78, 605.26125pt x 305.14pt>
 File: figures/wm_0.pdf Graphic file (type pdf)
  <use figures/wm_0.pdf>
-Package pdftex.def Info: figures/wm_0.pdf used on input line 373.
+Package pdftex.def Info: figures/wm_0.pdf used on input line 383.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
-<figures/wm_1.pdf, id=80, 305.14pt x 306.14375pt>
+<figures/wm_1.pdf, id=79, 305.14pt x 306.14375pt>
 File: figures/wm_1.pdf Graphic file (type pdf)
  <use figures/wm_1.pdf>
-Package pdftex.def Info: figures/wm_1.pdf used on input line 375.
+Package pdftex.def Info: figures/wm_1.pdf used on input line 385.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
-<figures/wm_2.pdf, id=81, 305.14pt x 306.14375pt>
+<figures/wm_2.pdf, id=80, 305.14pt x 306.14375pt>
 File: figures/wm_2.pdf Graphic file (type pdf)
  <use figures/wm_2.pdf>
-Package pdftex.def Info: figures/wm_2.pdf used on input line 383.
+Package pdftex.def Info: figures/wm_2.pdf used on input line 393.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
-<figures/wm_3.pdf, id=82, 605.26125pt x 305.14pt>
+<figures/wm_3.pdf, id=81, 605.26125pt x 305.14pt>
 File: figures/wm_3.pdf Graphic file (type pdf)
  <use figures/wm_3.pdf>
-Package pdftex.def Info: figures/wm_3.pdf used on input line 385.
+Package pdftex.def Info: figures/wm_3.pdf used on input line 395.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./figures/subtree_0.pdf> <./figures/subtree_1.pdf> <./figures/wm_0.pdf> <./
 figures/wm_1.pdf> <./figures/wm_2.pdf
@@ -816,61 +805,105 @@ figures/wm_1.pdf> <./figures/wm_2.pdf
 pdfTeX warning: pdflatex.exe (file ./figures/wm_2.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 > <./figures/wm_3.pdf>]
-Underfull \hbox (badness 1924) in paragraph at lines 471--494
+Underfull \hbox (badness 1924) in paragraph at lines 481--504
 \T1/ptm/m/n/10 equally dis-tributed size (all con-tain $\OT1/ztmcm/m/n/10 4$ \T
 1/ptm/m/n/10 prim-i-tives).
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 471--494
+Underfull \hbox (badness 2680) in paragraph at lines 481--504
 \T1/ptm/m/n/10 Search space par-ti-tion-ing with [][] par-al-leliza-tion
  []
 
-[6] <figures/g1.pdf, id=124, 406.68814pt x 253.23923pt>
+[6] <figures/g1.pdf, id=123, 406.68814pt x 253.23923pt>
 File: figures/g1.pdf Graphic file (type pdf)
  <use figures/g1.pdf>
-Package pdftex.def Info: figures/g1.pdf used on input line 516.
+Package pdftex.def Info: figures/g1.pdf used on input line 526.
 (pdftex.def)             Requested size: 227.62206pt x 141.73958pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 516--517
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 526--527
  [][] 
  []
 
-<figures/g4.pdf, id=125, 400.30492pt x 253.23923pt>
+<figures/g4.pdf, id=124, 400.30492pt x 253.23923pt>
 File: figures/g4.pdf Graphic file (type pdf)
  <use figures/g4.pdf>
-Package pdftex.def Info: figures/g4.pdf used on input line 522.
+Package pdftex.def Info: figures/g4.pdf used on input line 532.
 (pdftex.def)             Requested size: 227.62206pt x 143.99622pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 522--523
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 532--533
  [][] 
  []
 
-<figures/g3.pdf, id=126, 397.12115pt x 253.23923pt>
+<figures/g3.pdf, id=125, 397.12115pt x 253.23923pt>
 File: figures/g3.pdf Graphic file (type pdf)
  <use figures/g3.pdf>
-Package pdftex.def Info: figures/g3.pdf used on input line 528.
+Package pdftex.def Info: figures/g3.pdf used on input line 538.
 (pdftex.def)             Requested size: 227.62206pt x 145.15546pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 528--529
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 538--539
  [][] 
  []
 
-<figures/g2.pdf, id=127, 373.81534pt x 252.95691pt>
+<figures/g2.pdf, id=126, 373.81534pt x 252.95691pt>
 File: figures/g2.pdf Graphic file (type pdf)
  <use figures/g2.pdf>
-Package pdftex.def Info: figures/g2.pdf used on input line 535.
+Package pdftex.def Info: figures/g2.pdf used on input line 545.
 (pdftex.def)             Requested size: 227.62206pt x 154.02943pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 535--536
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 545--546
  [][] 
  []
 
+<figures/m0_pc.png, id=127, 858.95906pt x 618.81187pt>
+File: figures/m0_pc.png Graphic file (type png)
+ <use figures/m0_pc.png>
+Package pdftex.def Info: figures/m0_pc.png used on input line 554.
+(pdftex.def)             Requested size: 136.57462pt x 98.38872pt.
 
-LaTeX Warning: Citation `weber2010sharp' on page 7 undefined on input line 552.
+<figures/m1_pc.png, id=128, 767.86874pt x 840.89156pt>
+File: figures/m1_pc.png Graphic file (type png)
+ <use figures/m1_pc.png>
+Package pdftex.def Info: figures/m1_pc.png used on input line 558.
+(pdftex.def)             Requested size: 136.57462pt x 149.5576pt.
 
+<figures/m2_pc.png, id=130, 858.95906pt x 618.81187pt>
+File: figures/m2_pc.png Graphic file (type png)
+ <use figures/m2_pc.png>
+Package pdftex.def Info: figures/m2_pc.png used on input line 563.
+(pdftex.def)             Requested size: 136.57462pt x 98.38872pt.
+File: figures/m2_pc.png Graphic file (type png)
 
-) (main.bbl [7 <./figures/g1.pdf> <./figures/g4.pdf
+<use figures/m2_pc.png>
+Package pdftex.def Info: figures/m2_pc.png used on input line 567.
+(pdftex.def)             Requested size: 136.57462pt x 98.38872pt.
+
+<figures/m0_rendering.png, id=131, 1927.2pt x 1084.05pt>
+File: figures/m0_rendering.png Graphic file (type png)
+
+<use figures/m0_rendering.png>
+Package pdftex.def Info: figures/m0_rendering.png used on input line 572.
+(pdftex.def)             Requested size: 204.85846pt x 115.22633pt.
+
+<figures/m1_rendering.png, id=132, 1927.2pt x 1084.05pt>
+File: figures/m1_rendering.png Graphic file (type png)
+
+<use figures/m1_rendering.png>
+Package pdftex.def Info: figures/m1_rendering.png used on input line 576.
+(pdftex.def)             Requested size: 204.85846pt x 115.22633pt.
+
+<figures/m2_rendering.png, id=133, 1927.2pt x 1084.05pt>
+File: figures/m2_rendering.png Graphic file (type png)
+
+<use figures/m2_rendering.png>
+Package pdftex.def Info: figures/m2_rendering.png used on input line 581.
+(pdftex.def)             Requested size: 204.85846pt x 115.22633pt.
+File: figures/m2_rendering.png Graphic file (type png)
+ <use figures/m2_rendering.png>
+Package pdftex.def Info: figures/m2_rendering.png used on input line 585.
+(pdftex.def)             Requested size: 204.85846pt x 115.22633pt.
+) (main.bbl
+[7 <./figures/g1.pdf> <./figures/g4.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/g4.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -883,44 +916,39 @@ dfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./figures/g2.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 >]
-Underfull \hbox (badness 1259) in paragraph at lines 32--35
-[]\T1/ptm/m/n/10 Philippe Fla-jo-let and An-drew M. 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [8]
-(main.aux)
+ [8 <./figures/m0_pc.png> <./figures/m1_pc.png> <./figures/m2_pc.png> <./figure
+s/m0_rendering.png> <./figures/m1_rendering.png> <./figures/m2_rendering.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: There were undefined references.
-
- ) 
+) [9]
+(main.aux) ) 
 Here is how much of TeX's memory you used:
- 6634 strings out of 493323
- 96653 string characters out of 3139054
- 188559 words of memory out of 3000000
- 9965 multiletter control sequences out of 15000+200000
+ 6674 strings out of 493323
+ 97484 string characters out of 3139054
+ 190600 words of memory out of 3000000
+ 9998 multiletter control sequences out of 15000+200000
  51565 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,21n,49p,406b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/rsfs/rsf
-s10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/u
-syr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/wasy/wasy10.pfb>
-Output written on main.pdf (8 pages, 324122 bytes).
+ 42i,21n,49p,406b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/rsfs/rsfs10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/wasy/wasy10.pfb>
+Output written on main.pdf (9 pages, 3759424 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
+ 320 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

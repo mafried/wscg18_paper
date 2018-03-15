@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{MMGG95}
+\begin{thebibliography}{OBA{\etalchar{+}}03}
 
 \bibitem[BC04]{buchele2004three}
 Suzanne~F Buchele and Richard~H Crawford.
@@ -13,7 +13,7 @@ Coen Bron and Joep Kerbosch.
 \newblock {\em Communications of the ACM}, 16(9):575--577, 1973.
 
 \bibitem[BMV01]{BMV01}
-P.~Benk{\'o}, R.R. Martin, and T.~V{\'a}rady.
+P{\'a}l Benk{\H{o}}, Ralph~R Martin, and Tam{\'a}s V{\'a}rady.
 \newblock {Algorithms for reverse engineering boundary representation models}.
 \newblock {\em Computer-Aided Design}, 33(11):839--851, 2001.
 
@@ -45,7 +45,7 @@ Richard Hartley and Andrew Zisserman.
 \newblock Cambridge university press, 2003.
 
 \bibitem[KH13]{KH13}
-M.~Kazhdan and H.~Hoppe.
+Michael Kazhdan and Hugues Hoppe.
 \newblock Screened poisson surface reconstruction.
 \newblock {\em ACM Trans. Graph.}, 32(3):29:1--29:13, July 2013.
 
@@ -54,25 +54,30 @@ Donald Meagher.
 \newblock Geometric modeling using octree encoding.
 \newblock {\em Computer Graphics and Image Processing}, 19(2):129 -- 147, 1982.
 
+\bibitem[MG95]{miller95genetic}
+Brad~L Miller and David~E Goldberg.
+\newblock Genetic algorithms, tournament selection, and the effects of noise.
+\newblock {\em Complex Systems}, 9:193--212, 1995.
+
 \bibitem[Mit98]{mitchell1998introduction}
 Melanie Mitchell.
 \newblock {\em An introduction to genetic algorithms}.
 \newblock MIT press, 1998.
 
 \bibitem[MM65]{moon1965cliques}
-J.~W. Moon and L.~Moser.
+John~W Moon and Leo Moser.
 \newblock On cliques in graphs.
 \newblock {\em Israel Journal of Mathematics}, 3(1):23--28, Mar 1965.
 
-\bibitem[MMGG95]{miller95genetic}
-Brad~L. Miller, Brad~L. Miller, David~E. Goldberg, and David~E. Goldberg.
-\newblock Genetic algorithms, tournament selection, and the effects of noise.
-\newblock {\em Complex Systems}, 9:193--212, 1995.
-
 \bibitem[OBA{\etalchar{+}}03]{OBATS03}
-Y.~Ohtake, A.~Belyaev, M.~Alexa, G.~Turk, and H.-P. Seidel.
+Yutaka Ohtake, Alexander Belyaev, Marc Alexa, Greg Turk, and Hans-Peter Seidel.
 \newblock Multi-level partition of unity implicits.
 \newblock {\em ACM Trans. Graph.}, 22(3):463--470, 2003.
+
+\bibitem[PH77]{preparata1977convex}
+Franco~P. Preparata and Se~June Hong.
+\newblock Convex hulls of finite sets of points in two and three dimensions.
+\newblock {\em Communications of the ACM}, 20(2):87--93, 1977.
 
 \bibitem[RC11]{rusu20113d}
 Radu~Bogdan Rusu and Steve Cousins.
@@ -112,8 +117,8 @@ Ruwen Schnabel, Roland Wahl, and Reinhard Klein.
 \newblock {\em Computer graphics forum}, 26(2):214--226, 2007.
 
 \bibitem[VMC97]{VMC97}
-T.~Varady, R.R. Martin, and J.~Cox.
-\newblock {Reverse engineering of geometric models-an introduction}.
+Tam{\'a}s V{\'a}rady, Ralph~R Martin, and Jordan Cox.
+\newblock Reverse engineering of geometric models-an introduction.
 \newblock {\em Computer-Aided Design}, 29(4):255--268, 1997.
 
 \bibitem[Wei09]{weiss2009geometry}
@@ -121,5 +126,11 @@ Daniel Weiss.
 \newblock {\em Geometry-based structural optimization on CAD specification
   trees}.
 \newblock PhD thesis, ETH Zurich, 2009.
+
+\bibitem[WHH10]{weber2010sharp}
+Christopher Weber, Stefanie Hahmann, and Hans Hagen.
+\newblock Sharp feature detection in point clouds.
+\newblock In {\em Shape Modeling International Conference (SMI), 2010}, pages
+  175--186. IEEE, 2010.
 
 \end{thebibliography}
