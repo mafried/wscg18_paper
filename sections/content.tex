@@ -272,7 +272,7 @@ A variant of the \ac{GA} described in \cite{fayolle2016evolutionary} is used wit
 \label{eq:of}
 E(t, S) := \sum_{i=1}^{|S|}\left\{e^{-d_i(t)^2}+e^{-\theta_i(t)^2}\right\}-\alpha \cdot \text{size}(t),
 \end{equation}
-where $t$ is the tree candidate, $S$ is the point-set and $\text{size}(t)$ is the number of nodes in tree $t$ weighted by $\alpha$.
+where $t$ is the tree candidate, $S$ is the point-set corresponding to the partition's primitives and $\text{size}(t)$ is the number of nodes in tree $t$ weighted by $\alpha$.
 $d_i(t) = \beta \cdot f_t(s_i)$ is the signed distance between point $s_i$ and the surface defined by tree $t$ weighted by $\beta$.
 $\theta_i(t) = \gamma \cdot  \arccos(\nabla \hat{f_t}(s_i) \cdot n_i)$ is the angle between the point normal $n_i$ and the normalized gradient at position $s_i$ weighted by $\gamma$.  
 $\alpha, \beta$ and $\gamma$ are user-controlled parameters. 
@@ -282,9 +282,10 @@ The first term in Equation \ref{eq:of} (under the sum) estimates how close the s
 Initially, the population $T_0$ is filled with $n_T$ randomly generated trees with a height $\le h_{max}$. 
 For the maximum tree height, the approximation  
 \begin{equation}
-h_{max}\approx \sqrt{\pi \cdot \vert O \vert}
+%h_{max}\approx \sqrt{\pi \cdot \vert O \vert}
+h_{max}\approx \sqrt{\pi \cdot \binom{n_{pp}}{2}}
 \end{equation}
-is used, where $\vert O \vert$ is the size of the \ac{PO}-graph's edge-set.
+is used, where $n_{pp}$ is the number of primitives in the partition.
 It is based on the average height of binary trees for a given number of internal nodes \cite{flajolet1982TheAH} and worked well in all conducted experiments. 
 \\
 Each \ac{GA} iteration $i$ contains the following steps:
@@ -584,7 +585,7 @@ It indicates that, for larger models (model $0$ and $2$), the fastest partitioni
 		\centering
 		\includegraphics[width=\textwidth]{figures/m2_rendering.png}
 	\end{subfigure}	 
-	\caption{Point clouds and renderings of the resulting \ac{CSG}-tree representation of the models used in the evaluation.}
+	\caption{Point clouds and renderings of the resulting \ac{CSG}-tree representation of the models used in the evaluation (TODO).}
 \end{figure*}
 
 %%%%%%%%%%%%%%%%%%
