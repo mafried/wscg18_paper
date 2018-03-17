@@ -5,6 +5,10 @@
 %
 % modified Apr 2012 to match WSCG Word template
 %
+
+%\newcommand*{\review}{}%
+
+
 \documentclass[twoside,twocolumn,10pt]{article}
 %\documentclass[twoside,twocolumn,draft]{article}
 
@@ -12,6 +16,7 @@
 %\tracingall%\tracingonline=0
 %\tracingparagraphs
 %\tracingpages
+
 
 %%
 %%   Defines a new environment 'myalgorithm' that puts the caption *beneath*
@@ -21,27 +26,34 @@
 %%   GZ, Sep 2011
 %%
 
+
 \RequirePackage[ruled,noend,noline,slide]{algorithm2e}
-% 'slide' = more baseline skip
-
-% the following environment is necessary to make line spacing inside an algorithm
-% even, at least with egpubl.cls!
-%\newenvironment{myalgorithm}[1][htbp] 
-%  {\begin{algorithm}[#1]\setlength{\parskip}{0pt}} 
-%  {\end{algorithm}} 
-
-\SetCommentSty{textsf}
-\DontPrintSemicolon
-\setlength{\algomargin}{1.3ex}  % match margin with indentation of ``Algorithm x"
-\SetKwInOut{Input}{input}
-\SetKwInOut{Inout}{in/out}
-
-\newenvironment{myalgorithm}
+\makeatletter
+\newenvironment{Ualgorithm}[1][htpb]
 {\def\@algocf@post@ruled{\kern\interspacealgoruled\hrule  height\algoheightrule\kern3pt\relax}%
 	\def\@algocf@capt@ruled{under}
-	\begin{algorithm}[tb]}
+	\begin{algorithm}[#1]}
 	{\end{algorithm}}
+\makeatother
 
+
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+	\expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+	\expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+	\renewenvironment{#1}%
+	{\linenomath\csname old#1\endcsname}%
+	{\csname oldend#1\endcsname\endlinenomath}}% 
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+	\patchAmsMathEnvironmentForLineno{#1}%
+	\patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+	\patchBothAmsMathEnvironmentsForLineno{equation}%
+	\patchBothAmsMathEnvironmentsForLineno{align}%
+	\patchBothAmsMathEnvironmentsForLineno{flalign}%
+	\patchBothAmsMathEnvironmentsForLineno{alignat}%
+	\patchBothAmsMathEnvironmentsForLineno{gather}%
+	\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                             Packages
@@ -50,13 +62,16 @@
 
 \RequirePackage{ifpdf}
 \ifpdf
- \RequirePackage[pdftex]{graphicx}
- \RequirePackage[pdftex]{color}
+\RequirePackage[pdftex]{graphicx}
+\RequirePackage[pdftex]{color}
 \else
- \RequirePackage[dvips,draft]{graphicx}
- \RequirePackage[dvips]{color}
+\RequirePackage[dvips,draft]{graphicx}
+\RequirePackage[dvips]{color}
 \fi
 
+\RequirePackage{lineno}
+
+\usepackage{fancyhdr}
 
 %\usepackage{algorithm}% http://ctan.org/pkg/algorithms
 %\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
@@ -90,6 +105,14 @@
 
 \usepackage{subcaption}
 
+\ifdefined\review
+	\pagestyle{fancy}
+	\fancyhf{}
+	\fancyhead{}
+	\fancyfoot[C]{\thepage}
+	\renewcommand{\headrulewidth}{0.0pt}
+\fi
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                Title
 
@@ -101,26 +124,56 @@
 
 \title{Accelerating Evolutionary Construction Tree Extraction via Graph Partitioning}
 
+\ifdefined\review
 \author{
-\parbox{0.5\textwidth}{\centering
-Markus Friedrich, Sebastian Feld, Thomy Phan\\[1mm]
-Institute for Computer Science\\
-Ludwig-Maximilians-University Munich\\
-Oettingenstr. 67\\
-80538 Munich, Germany\\[1mm]
-\{markus.friedrich|sebastian.feld|thomy.phan\}@ifi.lmu.de
+	\parbox{0.25\textwidth}{\centering
+		First Author\\[1mm]
+		author's affiliation\\
+		1st line of address\\
+		2nd line of address\\
+		Country (ZIP) code, City, State\\[1mm]
+		e@mail
+	}
+	\hspace{0.05\textwidth}
+	\parbox{0.25\textwidth}{\centering
+		Second Author\\[1mm]
+		author's affiliation\\
+		1st line of address\\
+		2nd line of address\\
+		Country (ZIP) code, City, State\\[1mm]
+		e@mail
+	}
+	\hspace{0.05\textwidth}
+	\parbox{0.25\textwidth}{\centering
+		Third Author\\[1mm]
+		author's affiliation\\
+		1st line of address\\
+		2nd line of address\\
+		Country (ZIP) code, City, State\\[1mm]
+		e@mail
+	}
 }
-\hspace{0.0\textwidth}
-\parbox{0.50\textwidth}{\centering
-Pierre-Alain Fayolle\\[1mm]
-Division of Information and Systems\\
-The University of Aizu\\
-Aizu-Wakamatsu City \\
-965-8580 Fukushima, Japan\\[1mm]
-fayolle@u-aizu.ac.jp
+\else 
+\author{
+	\parbox{0.5\textwidth}{\centering
+		Markus Friedrich, Sebastian Feld, Thomy Phan\\[1mm]
+		Institute for Computer Science\\
+		Ludwig-Maximilians-University Munich\\
+		Oettingenstr. 67\\
+		80538 Munich, Germany\\[1mm]
+		\{markus.friedrich|sebastian.feld|thomy.phan\}@ifi.lmu.de
+	}
+	\hspace{0.0\textwidth}
+	\parbox{0.50\textwidth}{\centering
+		Pierre-Alain Fayolle\\[1mm]
+		Division of Information and Systems\\
+		The University of Aizu\\
+		Aizu-Wakamatsu City \\
+		965-8580 Fukushima, Japan\\[1mm]
+		fayolle@u-aizu.ac.jp
+	}
 }
-}
-
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                          Hyperref
@@ -157,37 +210,46 @@ fayolle@u-aizu.ac.jp
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                Document
+
 \begin{document}
+	
+	\ifdefined\review
+		\setpagewiselinenumbers	
+		\modulolinenumbers[5]
+		\linenumbers
+		\setlength\linenumbersep{5pt}	
+	\fi
 
-\twocolumn[{\csname @twocolumnfalse\endcsname
+	\twocolumn[{\csname @twocolumnfalse\endcsname
+		
+		\maketitle  % full width title
+		
+		\begin{abstract}
+			\noindent
+			\input{sections/abstract.tex}
+		\end{abstract}
+		\subsection*{Keywords}
+		$3$-d Reconstruction, Reverse Engineering, Computer Aided Design, Constructive Solid Geometry, Evolutionary Algorithms, Graph Theory
+		\vspace*{1.0\baselineskip}
+	}]
 
-\maketitle  % full width title
+	\begin{acronym}
+		\acro{CSG}{Constructive Solid Geometry}
+		\acro{CAD}{Computer Aided Design}
+		\acro{GA}{Genetic Algorithm}
+		\acro{RE}{Reverse Engineering}
+		\acro{BRep}{Boundary Representation}
+		\acro{PO}{Primitive Overlap}	
+		\acro{AABB}{Axis-Aligned Bounding Box}
+		\acrodefplural{AABB}[AABBs]{Axis-Aligned Bounding Boxes}
+		\acro{OBB}{Oriented Bounding Box}
+		\acrodefplural{OBB}[OBBs]{Oriented Bounding Boxes}	
+		\acro{BKA}{Bron-Kerbosch Algorithm}
+		\acro{RANSAC}{Random Sample Consensus}
+	\end{acronym}
 
-\begin{abstract}
-\noindent
-\input{sections/abstract.tex}
-\end{abstract}
-\subsection*{Keywords}
-$3$-d Reconstruction, Reverse Engineering, Computer Aided Design, Constructive Solid Geometry, Evolutionary Algorithms, Graph Theory
-\vspace*{1.0\baselineskip}
-}]
-\begin{acronym}
-	\acro{CSG}{Constructive Solid Geometry}
-	\acro{CAD}{Computer Aided Design}
-	\acro{GA}{Genetic Algorithm}
-	\acro{RE}{Reverse Engineering}
-	\acro{BRep}{Boundary Representation}
-	\acro{PO}{Primitive Overlap}	
-	\acro{AABB}{Axis-Aligned Bounding Box}
-	\acrodefplural{AABB}[AABBs]{Axis-Aligned Bounding Boxes}
-	\acro{OBB}{Oriented Bounding Box}
-	\acrodefplural{OBB}[OBBs]{Oriented Bounding Boxes}	
-	\acro{BKA}{Bron-Kerbosch Algorithm}
-	\acro{RANSAC}{Random Sample Consensus}
-\end{acronym}
-\input{sections/content.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bibliographystyle{alpha} % SFELD
-\bibliography{main} % SFELD
+	\input{sections/content.tex}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\bibliographystyle{alpha} % SFELD
+	\bibliography{main} % SFELD
 \end{document}
-
