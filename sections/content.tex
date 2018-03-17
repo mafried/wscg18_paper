@@ -55,8 +55,8 @@ The recent work of Berger et al. \cite{berger2017survey} presents a wide survey 
 Using these methods, the reconstructed objects lack information that can be used for inspection or re-use of the object in further modeling. 
 
 \paragraph{Reverse engineering, and B-Rep to CSG conversion}
-The goal of reverse engineering is the creation of consistent geometric models from point cloud data \cite{VMC97,BMV01}. They usually output B-Rep models 
-made of parametric patches.
+The goal of reverse engineering is the creation of consistent geometric models from point cloud data \cite{VMC97,BMV01}. 
+They usually output B-Rep models made of parametric patches.
 \\
 %\paragraph{B-Rep to CSG conversion}
 The conversion from B-Rep to CSG was first investigated in 
@@ -79,9 +79,9 @@ noisy, contain holes, or have additional details and thus the fitted primitives 
 This could impact the cellular classification on which these methods rely. 
 
 \paragraph{Point cloud to CSG construction}
-Close to the proposed work are methods that handles noisy and incomplete point clouds 
-such as \cite{schnabel2007efficient} for fitting primitives and methods that try to convert them to higher level representation such as \cite{fayolle2016evolutionary}. See also \cite[Sections~7 and 8]{berger2017survey} for further references. 
-One of the goals of this work is to improve the running time of the evolutionary algorithm used in \cite{fayolle2016evolutionary} via geometric consideration (the overlapping in space of primitives).
+Close to the proposed work are methods that handle noisy and incomplete point clouds 
+such as \cite{schnabel2007efficient} for fitting primitives and methods that try to convert them to higher level representation such as \cite{fayolle2016evolutionary}, see also \cite[Sections~7 and 8]{berger2017survey}. 
+One of the goals of this work is to improve the running time of the Evolutionary Algorithm used in \cite{fayolle2016evolutionary} via geometric consideration (the overlapping in space of primitives).
 
 %%%%%%%%%%%%%%%%%%
 %%% Background %%%
@@ -138,7 +138,7 @@ Evolutionary Algorithms are especially useful for solving combinatorial optimiza
 %like the proposed formulation of the \ac{CSG}-tree extraction problem \cite{eiben2003introduction, fayolle2016evolutionary}.
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.45\textwidth]{figures/evo.pdf}
+	\includegraphics[width=0.4\textwidth]{figures/evo.pdf}
 	\caption{The optimization process described by an Evolutionary Algorithm (derived from \cite{eiben2003introduction}).}
 	\label{fig:evo}
 \end{figure}
@@ -233,14 +233,14 @@ The number of resulting partitions also depends on the accuracy of the hull appr
 The more inaccurate the approximation is, the less partitions will be created.
 \begin{figure}[htb]
 	\centering
-	\begin{subfigure}[b]{0.3\linewidth}
+	\begin{subfigure}[b]{0.25\linewidth}
 		\includegraphics[width=\textwidth]{figures/right_part.pdf}
-		\caption{correct}
+		\caption{Correct.}
 	\end{subfigure}
 	~
-	\begin{subfigure}[b]{0.3\linewidth}
+	\begin{subfigure}[b]{0.25\linewidth}
 		\includegraphics[width=\textwidth]{figures/wrong_part.pdf}	
-		\caption{incorrect}
+		\caption{Incorrect.}
 	\end{subfigure}
 	\vskip\baselineskip	
 	\caption{In the incorrect partition (red), B influences the per-partition solution without being part of the partition.}\label{fig:part}
@@ -298,21 +298,24 @@ It consists of the following steps:
 	\item All trees are inserted in a list $L$ without adhering to any specific order.   
 	\item The last two trees $t_0$ and $t_1$ are removed from $L$, and their largest common subtree $t_{lcs}$ is computed. The subtree's leaf-set must be a subset of the leaf-sets of $t_0$ and $t_1$. 
 	The found largest common subtree might exist more than once in both trees.
-	Thus, the root nodes of each appearance of the subtree in $t_0$ and $t_1$ are stored in the lists $N_0$ and $N_1$.
-	See Fig.~\ref{fig:subtree_0} for an example.
+	Thus, the root nodes of each appearance of the subtree in $t_0$ and $t_1$ are stored in the lists $N_0$ and $N_1$ (see Fig.~\ref{fig:subtree_0}).
 	\\	
 	If $t_{lcs}$ is empty, $t_1$ is prepended to $L$ and a new tree candidate $t_1$ is removed from the end of $L$. 
-	The whole step is then repeated.
+	The largest common subtree search is then repeated.
 	\item For each node in $N_0$ and $N_1$ it is checked if it is a valid merge candidate.
 	This is done by traversing the corresponding tree ($t_0$ or $t_1$) from root node to leaves following Algorithm \ref{al:trav}.
 	If the node is reached that way, it is considered a valid merge candidate.
-	The valid merge candidate is then replaced by the root of the other tree resulting in a merged tree $t_m$.
+	The node is then replaced by the root of the other tree resulting in a merged tree $t_m$.
 	If more than one valid candidate exists, the candidate corresponding to the larger tree is replaced by the root of the smaller tree.
-	If both trees are of the same size, the candidate of $t_0$ is chosen.  
-	See Fig.~\ref{fig:subtree_1} for an example.
+	If both trees are of the same size, the candidate of $t_0$ is chosen (see Fig.~\ref{fig:subtree_1}).
+	\\
+	If there is no valid merge candidate, the procedure is repeated with the next smaller common subtree in $t_0$ and $t_1$.
+	If no other common subtree exists, $t_1$ is replaced by a new tree candidate from $L$.
+	Then, the largest common subtree search and its subsequent steps are repeated.
 	\item $t_m$ is appended to $L$.
 	\item The merge process is continued until there is only a single node left in $L$.
-	Since the model to reconstruct is by definition connected, the merge process always terminates.
+	Since the model to reconstruct is by definition connected, a pair of mergeable trees exists in each iteration. 
+	Thus, the merge process always terminates.
 \end{enumerate}
 \begin{figure}[htb]
 	\centering		
@@ -331,7 +334,7 @@ It consists of the following steps:
 	\caption{(\protect\subref{fig:subtree_0}) Two merge trees ($t_0$ left, $t_1$ right) with a largest common subtree (green). $N_0$ contains the purple node, $N_1$ the orange node. (\protect\subref{fig:subtree_1}) The merged tree $t_m$.}
 \end{figure}
 The merge process has an asymptotic computational complexity of $\mathcal{O}(\vert L \vert^2)$ since in the worst case $L$ has to be  traversed for each merge.
-The proposed algorithm does not guarantee to find the $t_m$ with the minimum number of nodes possible (see also Section \ref{sec:eval}).
+%The proposed algorithm does not guarantee to find the $t_m$ with the minimum number of nodes possible (see also Section \ref{sec:eval}).
 \begin{Ualgorithm}[htb]
 \SetKwProg{myproc}{Procedure}{}{}
 \SetKwFunction{proc}{isValid}
@@ -391,7 +394,6 @@ Model $3$ is based on real measurements, and primitive fitting was conducted usi
 Fig.~\ref{fig:models} depicts all pipeline step results for model $1$.
 Fig.~\ref{fig:models2} shows point clouds and renderings for model $0$, $2$ and $3$.
 \\
-The three synthetic models were sampled with different rates.
 Table \ref{tab::models} contains model details. 
 \begin{table}[h]
 	\centering
@@ -538,7 +540,7 @@ Our experimental evaluation indicated a significant speed-up over the baseline a
 \\
 One possible direction for future works is 
 the implementation of the \ac{GA} for massively parallel computing hardware, combined with the proposed partitioning approach. 
-In addition, point cloud filtering could further increase performance.
+%In addition, point cloud filtering could further increase performance.
 A decreased tree size in the partitioning approach could also be achieved by improving the merge process.
 Finally, since the partitioning (and merge) approach described in this work is independent on the technique used for the \ac{CSG}-tree construction, the same approach could potentially be used with the \ac{CSG}-tree conversion approaches in \cite{shapiro1991construction,buchele2004three}. 
 \begin{comment}

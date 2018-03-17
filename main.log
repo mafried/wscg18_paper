@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  17 MAR 2018 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  17 MAR 2018 17:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -718,19 +718,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 \T1/ptm/m/n/10 ing, the con-sid-ered boolean set-operations are
  []
 
-<figures/evo.pdf, id=15, 462.72874pt x 262.9825pt>
+<figures/evo.pdf, id=17, 462.72874pt x 262.9825pt>
 File: figures/evo.pdf Graphic file (type pdf)
  <use figures/evo.pdf>
 Package pdftex.def Info: figures/evo.pdf used on input line 141.
-(pdftex.def)             Requested size: 204.85846pt x 116.42693pt.
+(pdftex.def)             Requested size: 182.09486pt x 103.4897pt.
 
-<figures/pipe_0.pdf, id=16, 305.14pt x 306.14375pt>
+<figures/pipe_0.pdf, id=18, 305.14pt x 306.14375pt>
 File: figures/pipe_0.pdf Graphic file (type pdf)
  <use figures/pipe_0.pdf>
 Package pdftex.def Info: figures/pipe_0.pdf used on input line 179.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
-<figures/pipe_1.pdf, id=17, 305.14pt x 306.14375pt>
+<figures/pipe_1.pdf, id=19, 305.14pt x 306.14375pt>
 File: figures/pipe_1.pdf Graphic file (type pdf)
  <use figures/pipe_1.pdf>
 Package pdftex.def Info: figures/pipe_1.pdf used on input line 185.
@@ -738,19 +738,19 @@ Package pdftex.def Info: figures/pipe_1.pdf used on input line 185.
 Package acronym Info: Label `acro:PO' newly defined as it shall be overridden
 although it is yet undefined on input line 186.
 
-<figures/pipe_2.pdf, id=18, 305.14pt x 306.14375pt>
+<figures/pipe_2.pdf, id=20, 305.14pt x 306.14375pt>
 File: figures/pipe_2.pdf Graphic file (type pdf)
  <use figures/pipe_2.pdf>
 Package pdftex.def Info: figures/pipe_2.pdf used on input line 191.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
-<figures/pipe_4.pdf, id=19, 605.26125pt x 305.14pt>
+<figures/pipe_4.pdf, id=21, 605.26125pt x 305.14pt>
 File: figures/pipe_4.pdf Graphic file (type pdf)
  <use figures/pipe_4.pdf>
 Package pdftex.def Info: figures/pipe_4.pdf used on input line 197.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
-<figures/pipe_3.pdf, id=20, 304.13625pt x 305.14pt>
+<figures/pipe_3.pdf, id=22, 304.13625pt x 305.14pt>
 File: figures/pipe_3.pdf Graphic file (type pdf)
  <use figures/pipe_3.pdf>
 Package pdftex.def Info: figures/pipe_3.pdf used on input line 203.
@@ -768,14 +768,14 @@ File: figures/right_part.pdf Graphic file (type pdf)
 
 <use figures/right_part.pdf>
 Package pdftex.def Info: figures/right_part.pdf used on input line 237.
-(pdftex.def)             Requested size: 66.1416pt x 83.61797pt.
+(pdftex.def)             Requested size: 55.11745pt x 69.68286pt.
 
 <figures/wrong_part.pdf, id=55, 380.85074pt x 485.815pt>
 File: figures/wrong_part.pdf Graphic file (type pdf)
 
 <use figures/wrong_part.pdf>
 Package pdftex.def Info: figures/wrong_part.pdf used on input line 242.
-(pdftex.def)             Requested size: 66.1416pt x 84.36655pt.
+(pdftex.def)             Requested size: 55.11745pt x 70.30423pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 250--252
 \T1/ptm/m/n/10 With known par-ti-tions, [][]-tree ex-trac-tion is
@@ -806,48 +806,48 @@ ltiple pdfs with page group included in a single page
 File: figures/subtree_0.pdf Graphic file (type pdf)
 
 <use figures/subtree_0.pdf>
-Package pdftex.def Info: figures/subtree_0.pdf used on input line 320.
+Package pdftex.def Info: figures/subtree_0.pdf used on input line 323.
 (pdftex.def)             Requested size: 132.28322pt x 66.62483pt.
 
 <figures/subtree_1.pdf, id=78, 261.97874pt x 262.9825pt>
 File: figures/subtree_1.pdf Graphic file (type pdf)
 
 <use figures/subtree_1.pdf>
-Package pdftex.def Info: figures/subtree_1.pdf used on input line 326.
+Package pdftex.def Info: figures/subtree_1.pdf used on input line 329.
 (pdftex.def)             Requested size: 66.1416pt x 66.39151pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 356.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 359.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 356.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 359.
 
 <figures/wm_0.pdf, id=79, 605.26125pt x 305.14pt>
 File: figures/wm_0.pdf Graphic file (type pdf)
  <use figures/wm_0.pdf>
-Package pdftex.def Info: figures/wm_0.pdf used on input line 363.
+Package pdftex.def Info: figures/wm_0.pdf used on input line 366.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
 <figures/wm_1.pdf, id=80, 305.14pt x 306.14375pt>
 File: figures/wm_1.pdf Graphic file (type pdf)
  <use figures/wm_1.pdf>
-Package pdftex.def Info: figures/wm_1.pdf used on input line 365.
+Package pdftex.def Info: figures/wm_1.pdf used on input line 368.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
 <figures/wm_2.pdf, id=81, 305.14pt x 306.14375pt>
 File: figures/wm_2.pdf Graphic file (type pdf)
  <use figures/wm_2.pdf>
-Package pdftex.def Info: figures/wm_2.pdf used on input line 373.
+Package pdftex.def Info: figures/wm_2.pdf used on input line 376.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
 <figures/wm_3.pdf, id=82, 605.26125pt x 305.14pt>
 File: figures/wm_3.pdf Graphic file (type pdf)
  <use figures/wm_3.pdf>
-Package pdftex.def Info: figures/wm_3.pdf used on input line 375.
+Package pdftex.def Info: figures/wm_3.pdf used on input line 378.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
-Overfull \hbox (4.37888pt too wide) in paragraph at lines 427--452
+Overfull \hbox (4.37888pt too wide) in paragraph at lines 429--454
  [][] 
  []
 
@@ -857,140 +857,140 @@ figures/wm_1.pdf> <./figures/wm_2.pdf
 pdfTeX warning: pdflatex.exe (file ./figures/wm_2.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 > <./figures/wm_3.pdf>]
-Underfull \hbox (badness 1924) in paragraph at lines 461--484
+Underfull \hbox (badness 1924) in paragraph at lines 463--486
 \T1/ptm/m/n/10 equally dis-tributed size (all con-tain $\OT1/ztmcm/m/n/10 4$ \T
 1/ptm/m/n/10 prim-i-tives).
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 461--484
+Underfull \hbox (badness 2680) in paragraph at lines 463--486
 \T1/ptm/m/n/10 Search space par-ti-tion-ing with [][] par-al-leliza-tion
  []
 
 [6] <figures/g1.pdf, id=124, 406.68814pt x 252.95691pt>
 File: figures/g1.pdf Graphic file (type pdf)
  <use figures/g1.pdf>
-Package pdftex.def Info: figures/g1.pdf used on input line 506.
+Package pdftex.def Info: figures/g1.pdf used on input line 508.
 (pdftex.def)             Requested size: 227.62206pt x 141.58156pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 506--507
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 508--509
  [][] 
  []
 
 <figures/g4.pdf, id=125, 393.9217pt x 252.95691pt>
 File: figures/g4.pdf Graphic file (type pdf)
  <use figures/g4.pdf>
-Package pdftex.def Info: figures/g4.pdf used on input line 512.
+Package pdftex.def Info: figures/g4.pdf used on input line 514.
 (pdftex.def)             Requested size: 227.62206pt x 146.17087pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 512--513
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 514--515
  [][] 
  []
 
 <figures/g3.pdf, id=126, 397.12115pt x 252.95691pt>
 File: figures/g3.pdf Graphic file (type pdf)
  <use figures/g3.pdf>
-Package pdftex.def Info: figures/g3.pdf used on input line 518.
+Package pdftex.def Info: figures/g3.pdf used on input line 520.
 (pdftex.def)             Requested size: 227.62206pt x 144.99362pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 518--519
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 520--521
  [][] 
  []
 
 <figures/g2.pdf, id=127, 373.81534pt x 252.95691pt>
 File: figures/g2.pdf Graphic file (type pdf)
  <use figures/g2.pdf>
-Package pdftex.def Info: figures/g2.pdf used on input line 524.
+Package pdftex.def Info: figures/g2.pdf used on input line 526.
 (pdftex.def)             Requested size: 227.62206pt x 154.02943pt.
 
-Overfull \hbox (7.15225pt too wide) in paragraph at lines 524--525
+Overfull \hbox (7.15225pt too wide) in paragraph at lines 526--527
  [][] 
  []
 
 <figures/m1_pc.png, id=128, 342.5297pt x 588.69937pt>
 File: figures/m1_pc.png Graphic file (type png)
  <use figures/m1_pc.png>
-Package pdftex.def Info: figures/m1_pc.png used on input line 590.
+Package pdftex.def Info: figures/m1_pc.png used on input line 592.
 (pdftex.def)             Requested size: 91.04742pt x 156.48067pt.
 
 <figures/graph_m1.pdf, id=130, 243.91125pt x 333.245pt>
 File: figures/graph_m1.pdf Graphic file (type pdf)
 
 <use figures/graph_m1.pdf>
-Package pdftex.def Info: figures/graph_m1.pdf used on input line 595.
+Package pdftex.def Info: figures/graph_m1.pdf used on input line 597.
 (pdftex.def)             Requested size: 113.81102pt x 155.4963pt.
 
 <figures/m1_rendering_wo.png, id=131, 882.29625pt x 636.12656pt>
 File: figures/m1_rendering_wo.png Graphic file (type png)
 
 <use figures/m1_rendering_wo.png>
-Package pdftex.def Info: figures/m1_rendering_wo.png used on input line 600.
+Package pdftex.def Info: figures/m1_rendering_wo.png used on input line 602.
 (pdftex.def)             Requested size: 182.09486pt x 131.29007pt.
 
 <figures/tree_m1_gt.pdf, id=132, 357.335pt x 333.245pt>
 File: figures/tree_m1_gt.pdf Graphic file (type pdf)
 
 <use figures/tree_m1_gt.pdf>
-Package pdftex.def Info: figures/tree_m1_gt.pdf used on input line 606.
+Package pdftex.def Info: figures/tree_m1_gt.pdf used on input line 608.
 (pdftex.def)             Requested size: 100.15425pt x 93.39948pt.
 
 <figures/tree_m1_ga.pdf, id=133, 580.1675pt x 333.245pt>
 File: figures/tree_m1_ga.pdf Graphic file (type pdf)
 
 <use figures/tree_m1_ga.pdf>
-Package pdftex.def Info: figures/tree_m1_ga.pdf used on input line 611.
+Package pdftex.def Info: figures/tree_m1_ga.pdf used on input line 613.
 (pdftex.def)             Requested size: 172.99498pt x 99.36407pt.
 
 <figures/tree_m1_ss.pdf, id=134, 728.7225pt x 333.245pt>
 File: figures/tree_m1_ss.pdf Graphic file (type pdf)
 
 <use figures/tree_m1_ss.pdf>
-Package pdftex.def Info: figures/tree_m1_ss.pdf used on input line 616.
+Package pdftex.def Info: figures/tree_m1_ss.pdf used on input line 618.
 (pdftex.def)             Requested size: 172.99498pt x 79.10582pt.
 
 <figures/m0_pc.png, id=135, 646.66594pt x 559.33969pt>
 File: figures/m0_pc.png Graphic file (type png)
  <use figures/m0_pc.png>
-Package pdftex.def Info: figures/m0_pc.png used on input line 627.
+Package pdftex.def Info: figures/m0_pc.png used on input line 629.
 (pdftex.def)             Requested size: 136.57462pt x 118.13051pt.
 
 <figures/m2_pc.png, id=136, 667.74469pt x 484.81125pt>
 File: figures/m2_pc.png Graphic file (type png)
  <use figures/m2_pc.png>
-Package pdftex.def Info: figures/m2_pc.png used on input line 632.
+Package pdftex.def Info: figures/m2_pc.png used on input line 634.
 (pdftex.def)             Requested size: 136.57462pt x 99.15762pt.
 
 <figures/m3_pc.png, id=137, 576.65437pt x 530.73282pt>
 File: figures/m3_pc.png Graphic file (type png)
  <use figures/m3_pc.png>
-Package pdftex.def Info: figures/m3_pc.png used on input line 637.
+Package pdftex.def Info: figures/m3_pc.png used on input line 639.
 (pdftex.def)             Requested size: 136.57462pt x 125.69402pt.
 
 <figures/m0_rendering_wo.png, id=138, 882.29625pt x 636.12656pt>
 File: figures/m0_rendering_wo.png Graphic file (type png)
 
 <use figures/m0_rendering_wo.png>
-Package pdftex.def Info: figures/m0_rendering_wo.png used on input line 643.
+Package pdftex.def Info: figures/m0_rendering_wo.png used on input line 645.
 (pdftex.def)             Requested size: 136.57462pt x 98.4627pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 644.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 646.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 644.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 646.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 644.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 646.
 
 <figures/m2_rendering_wo.png, id=139, 882.29625pt x 636.12656pt>
 File: figures/m2_rendering_wo.png Graphic file (type png)
 
 <use figures/m2_rendering_wo.png>
-Package pdftex.def Info: figures/m2_rendering_wo.png used on input line 648.
+Package pdftex.def Info: figures/m2_rendering_wo.png used on input line 650.
 (pdftex.def)             Requested size: 136.57462pt x 98.4627pt.
 
 <figures/m3_rendering_wo.png, id=140, 882.29625pt x 636.12656pt>
 File: figures/m3_rendering_wo.png Graphic file (type png)
 
 <use figures/m3_rendering_wo.png>
-Package pdftex.def Info: figures/m3_rendering_wo.png used on input line 653.
+Package pdftex.def Info: figures/m3_rendering_wo.png used on input line 655.
 (pdftex.def)             Requested size: 136.57462pt x 98.4627pt.
 ) (main.bbl [7 <./figures/g1.pdf> <./figures/g4.pdf
 
@@ -1041,7 +1041,7 @@ ype1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/wasy/wasy10.pfb>
-Output written on main.pdf (9 pages, 2052471 bytes).
+Output written on main.pdf (9 pages, 2052533 bytes).
 PDF statistics:
  362 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
