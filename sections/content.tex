@@ -565,7 +565,7 @@ Our experimental evaluation indicated a significant speed-up over the baseline a
 \\
 One possible direction for future works is 
 the implementation of the \ac{GA} for massively parallel computing hardware, combined with the proposed partitioning approach. 
-In addition, point cloud filtering based on sharp feature detection \cite{weber2010sharp} could further increase performance.
+In addition, point cloud filtering could further increase performance.
 A decreased tree size in the partitioning approach could also be achieved by improving the merge process.
 Finally, since the partitioning (and merge) approach described in this work is independent on the technique used for the CSG tree construction, the same approach could potentially be used with the CSG conversion approaches in \cite{shapiro1991construction,buchele2004three}. 
 \begin{comment}
@@ -653,6 +653,22 @@ Finally, since the partitioning (and merge) approach described in this work is i
 	\centering
 	\begin{subfigure}[b]{0.30\linewidth}
 		\centering
+		\includegraphics[width=\textwidth]{figures/m0_pc.png}
+		%\caption{Model $0$}
+	\end{subfigure}	 
+	\begin{subfigure}[b]{0.3\linewidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/m2_pc.png}
+		%\caption{Model $2$}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.3\linewidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/m3_pc.png}
+		%\caption{Model $3$}
+	\end{subfigure}	 
+	\\
+	\begin{subfigure}[b]{0.30\linewidth}
+		\centering
 		\includegraphics[width=\textwidth]{figures/m0_rendering_wo.png}
 		\caption{Model $0$}
 	\end{subfigure}	 
@@ -667,6 +683,6 @@ Finally, since the partitioning (and merge) approach described in this work is i
 		\caption{Model $3$}
 	\end{subfigure}	 
 	\vskip\baselineskip	
-	\caption{Renderings of resulting models $0$, $2$ and $3$.}
+	\caption{Point clouds and renderings of resulting models $0$, $2$ and $3$.}
 	\label{fig:models2}
 \end{figure*}

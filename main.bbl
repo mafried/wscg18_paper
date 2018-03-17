@@ -127,10 +127,4 @@ Daniel Weiss.
   trees}.
 \newblock PhD thesis, ETH Zurich, 2009.
 
-\bibitem[WHH10]{weber2010sharp}
-Christopher Weber, Stefanie Hahmann, and Hans Hagen.
-\newblock Sharp feature detection in point clouds.
-\newblock In {\em Shape Modeling International Conference (SMI), 2010}, pages
-  175--186. IEEE, 2010.
-
 \end{thebibliography}
