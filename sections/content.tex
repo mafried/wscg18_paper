@@ -24,9 +24,8 @@ This issue is addressed by the approaches proposed in this paper.
 The basic idea of the described acceleration scheme is to exploit spatial relationships between primitives: 
 Primitives that do not overlap spatially are not considered to be operands of a \ac{CSG}-operation.
 This knowledge can be used to partition overlapping primitives and to compute partial per-partition results that are later on merged to a single \ac{CSG}-tree. 
-\\
-%In particular, this paper makes the following contributions:
-% in the field of \ac{GA}-based \ac{CSG}-tree recovery from point clouds: 
+In particular, this paper makes the following contributions:
+%in the field of \ac{GA}-based \ac{CSG}-tree recovery from point clouds: 
 \begin{itemize}
 \item An acceleration scheme based on spatial search space partitioning together with a robust merge mechanism.
 \item A description and analysis of parallelization strategies for the proposed algorithms.
@@ -215,7 +214,7 @@ It represents spatial overlap between primitives using an undirected graph $G=(P
 The \ac{PO}-Graph is generated based on the location, orientation and geometric shape of the primitives, see Fig.~\ref{fig:pipe1} for an example.
 Complex shapes can be approximated with simpler bounding volumes like \acp{OBB} or the convex hull of the corresponding point-set \cite{preparata1977convex}
 \\
-For better scalability, computational complexity can be reduced from $\mathcal{O}({n_p}^2)$ (overlap check between each primitive and each other primitive) to $\mathcal{O}(n_p\log(n_p))$ using hierarchical space partitioning schemes like Octrees \cite{meagher1982Octree}.
+For better scalability, computational complexity can be reduced from $\mathcal{O}({n_p}^2)$ (overlap check between each primitive and each other primitive) to $\mathcal{O}(n_p\log(n_p))$ using e.g. Octrees \cite{meagher1982Octree}.
 \subsection{Search Space Partitioning}
 With known primitives and their spatial relations given by the \ac{PO}-graph, the goal is now to find independent search space partitions. 
 \\
@@ -243,7 +242,7 @@ The more inaccurate the approximation is, the less partitions will be created.
 		\caption{Incorrect.}
 	\end{subfigure}
 	\vskip\baselineskip	
-	\caption{In the incorrect partition (red), B influences the per-partition solution without being part of the partition.}\label{fig:part}
+	\caption{In (b), B influences the per-partition solution without being part of the partition.}\label{fig:part}
 \end{figure}
 \subsection{Per-Partition \ac{CSG}-Tree Extraction}
 \label{ch:ga}
@@ -265,7 +264,7 @@ For the maximum tree height, the approximation
 \begin{equation}
 \label{eq:hmax}
 %h_{max}\approx \sqrt{\pi \cdot \vert O \vert}
-h_{max}\approx \sqrt{\pi \cdot \binom{n_{pp}}{2}}
+h_{max}\approx \sqrt{\pi/2 \cdot n_{pp}\cdot(n_{pp}-1)}
 \end{equation}
 is used, where $n_{pp}$ is the number of primitives in the partition.
 It is based on the average height of binary trees for a given number of internal nodes \cite{flajolet1982TheAH} and worked well in all conducted experiments. 
@@ -423,7 +422,8 @@ Table \ref{tab::models} contains model details.
 	\caption{Details on evaluated models. 'low' and 'high' indicate different sampling rates. Numbers of partitions are depicted per partition size. First position in parantheses indicate number of partitions of size $1$ and so on.}
 	\label{tab::models}
 \end{table}
-Baseline is the \ac{GA} approach proposed in \cite{fayolle2016evolutionary} and described in Section~\ref{ch:ga}. The parameter set used for both, baseline and partitioning scheme, is listed in Table \ref{tab:gaparams}.
+Baseline is the \ac{GA} approach proposed in \cite{fayolle2016evolutionary} and described in Section~\ref{ch:ga}. 
+The parameter-set used for both, baseline and partitioning scheme, is listed in Table \ref{tab:gaparams}.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|l|l|}
@@ -506,25 +506,25 @@ It indicates that, for larger models (model $0$ and $2$), the fastest partitioni
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g1.pdf}
-	\caption{Timings for all approach combinations and models $0$ and $2$ with high-detail sampling. Vertical black lines indicate standard deviation.}
+	\caption{Timings for all approach combinations and models $0$ and $2$ with high-detail sampling (black lines: standard deviations).}
 	\label{fig:graph1}
 \end{figure}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g4.pdf}
-	\caption{Timings for all approach combinations and models  $1$ and $3$ with high-detail sampling. Vertical black lines indicate standard deviation.}
+	\caption{Timings for all approach combinations and models $1$ and $3$ with high-detail sampling (black lines: standard deviations).}
 	\label{fig:graph4}
 \end{figure}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g3.pdf}
-	\caption{Ratio between high-detail and low-detail point cloud size factor and corresponding timing factors for all models (see Equation \ref{eq:ratio}). The red line indicates linear scaling with a slope of $1$ with respect to point cloud size. Model $3$ is missing since it exists only in high-detail.}
+	\caption{Ratio between high-detail and low-detail point cloud size factor and corresponding timing factors for all models (see Equation \ref{eq:ratio}). The red line indicates linear scaling with a slope of $1$ with respect to point cloud size. Model $3$ exists only in high-detail.}
 	\label{fig:graph3}
 \end{figure}
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/g2.pdf}
-	\caption{Average tree size and depth for baseline and search space partitioning methods for all models with high-detail sampling. Vertical black lines indicate standard deviation.}
+	\caption{Average tree size and depth for baseline and partitioning methods (black lines: standard deviations).}
 	\label{fig:graph2}
 \end{figure}
 %%%%%%%%%%%%%%%%%%

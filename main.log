@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  17 MAR 2018 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  17 MAR 2018 18:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -609,104 +609,89 @@ although it is yet undefined on input line 8.
 Package acronym Info: Label `acro:GA' newly defined as it shall be overridden
 although it is yet undefined on input line 19.
 
-Underfull \hbox (badness 1231) in paragraph at lines 5--30
+Underfull \hbox (badness 1231) in paragraph at lines 5--29
 \T1/ptm/m/n/10 Reverse En-gi-neer-ing ([])[] -i.e., the re-cov-ery of a
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 5--30
+Underfull \hbox (badness 3668) in paragraph at lines 5--29
 \T1/ptm/m/n/10 model's ge-o-met-ric rep-re-sen-ta-tion from po-ten-tially
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 5--30
+Underfull \hbox (badness 1281) in paragraph at lines 5--29
 \T1/ptm/m/n/10 as-pect of mod-ern [][]Com-puter Aided De-sign ([])[]
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 5--30
+Underfull \hbox (badness 3724) in paragraph at lines 5--29
 \T1/ptm/m/n/10 An ex-pres-sive and in-tu-itive model rep-re-sen-ta-tion
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 5--30
+Underfull \hbox (badness 2418) in paragraph at lines 5--29
 \T1/ptm/m/n/10 solids by a bi-nary tree with reg-u-lar-ized boolean
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 5--30
+Underfull \hbox (badness 1303) in paragraph at lines 5--29
 \T1/ptm/m/n/10 (B-Rep) and then by con-ver-sion of the B-Rep to
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 5--30
+Underfull \hbox (badness 5288) in paragraph at lines 5--29
 \T1/ptm/m/n/10 that usu-ally re-quire ex-act ge-o-met-ric in-ter-sec-tion
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 5--30
+Underfull \hbox (badness 2221) in paragraph at lines 5--29
 \T1/ptm/m/n/10 To over-come this con-straint, [][]-tree gen-er-a-tion
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 5--30
+Underfull \hbox (badness 1205) in paragraph at lines 5--29
 \T1/ptm/m/n/10 and set-operations for a fixed max-i-mum [][]-tree
  []
 
-
-Underfull \hbox (badness 2961) in paragraph at lines 5--30
-\T1/ptm/m/n/10 is to ex-ploit spa-tial re-la-tion-ships be-tween prim-i-
- []
-
-
-Underfull \hbox (badness 1112) in paragraph at lines 5--30
-\T1/ptm/m/n/10 tives: Prim-i-tives that do not over-lap spa-tially are
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--30
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 30.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 
-Underfull \hbox (badness 1052) in paragraph at lines 58--80
+Underfull \hbox (badness 1052) in paragraph at lines 57--79
 \T1/ptm/m/n/10 in [[], []] and later im-proved by Buchele
  []
 
 Package acronym Info: Label `acro:RANSAC' newly defined as it shall be overridd
 en
-although it is yet undefined on input line 99.
+although it is yet undefined on input line 98.
 [2]
-Underfull \hbox (badness 1082) in paragraph at lines 117--118
+Underfull \hbox (badness 1082) in paragraph at lines 116--117
 \T1/ptm/m/n/10 The set-operations in-ter-sec-tion, union, com-ple-ment
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 117--118
+Underfull \hbox (badness 2744) in paragraph at lines 116--117
 \T1/ptm/m/n/10 and sub-trac-tion are im-ple-mented us-ing $[]$- and
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 124--126
+Underfull \hbox (badness 4229) in paragraph at lines 123--125
 \T1/ptm/m/n/10 where $\OML/ztmcm/m/it/10 S[]$ \T1/ptm/m/n/10 is the solid cor-r
 e-spond-ing to the set
  []
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 124--126
+Underfull \hbox (badness 3199) in paragraph at lines 123--125
 \OMS/ztmcm/m/n/10 f\OML/ztmcm/m/it/10 x \OMS/ztmcm/m/n/10 2 \U/msb/m/n/10 R[] \
 OT1/ztmcm/m/n/10 : \OML/ztmcm/m/it/10 f[] \OMS/ztmcm/m/n/10  \OT1/ztmcm/m/n/10
  0\OMS/ztmcm/m/n/10 g$ \T1/ptm/m/n/10 ($\OML/ztmcm/m/it/10 i \OT1/ztmcm/m/n/10 
@@ -714,87 +699,90 @@ OT1/ztmcm/m/n/10 : \OML/ztmcm/m/it/10 f[] \OMS/ztmcm/m/n/10  \OT1/ztmcm/m/n/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 \T1/ptm/m/n/10 ing, the con-sid-ered boolean set-operations are
  []
 
 <figures/evo.pdf, id=17, 462.72874pt x 262.9825pt>
 File: figures/evo.pdf Graphic file (type pdf)
  <use figures/evo.pdf>
-Package pdftex.def Info: figures/evo.pdf used on input line 141.
+Package pdftex.def Info: figures/evo.pdf used on input line 140.
 (pdftex.def)             Requested size: 182.09486pt x 103.4897pt.
 
 <figures/pipe_0.pdf, id=18, 305.14pt x 306.14375pt>
 File: figures/pipe_0.pdf Graphic file (type pdf)
  <use figures/pipe_0.pdf>
-Package pdftex.def Info: figures/pipe_0.pdf used on input line 179.
+Package pdftex.def Info: figures/pipe_0.pdf used on input line 178.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
 <figures/pipe_1.pdf, id=19, 305.14pt x 306.14375pt>
 File: figures/pipe_1.pdf Graphic file (type pdf)
  <use figures/pipe_1.pdf>
-Package pdftex.def Info: figures/pipe_1.pdf used on input line 185.
+Package pdftex.def Info: figures/pipe_1.pdf used on input line 184.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 Package acronym Info: Label `acro:PO' newly defined as it shall be overridden
-although it is yet undefined on input line 186.
+although it is yet undefined on input line 185.
 
 <figures/pipe_2.pdf, id=20, 305.14pt x 306.14375pt>
 File: figures/pipe_2.pdf Graphic file (type pdf)
  <use figures/pipe_2.pdf>
-Package pdftex.def Info: figures/pipe_2.pdf used on input line 191.
+Package pdftex.def Info: figures/pipe_2.pdf used on input line 190.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
 <figures/pipe_4.pdf, id=21, 605.26125pt x 305.14pt>
 File: figures/pipe_4.pdf Graphic file (type pdf)
  <use figures/pipe_4.pdf>
-Package pdftex.def Info: figures/pipe_4.pdf used on input line 197.
+Package pdftex.def Info: figures/pipe_4.pdf used on input line 196.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
 <figures/pipe_3.pdf, id=22, 304.13625pt x 305.14pt>
 File: figures/pipe_3.pdf Graphic file (type pdf)
  <use figures/pipe_3.pdf>
-Package pdftex.def Info: figures/pipe_3.pdf used on input line 203.
+Package pdftex.def Info: figures/pipe_3.pdf used on input line 202.
 (pdftex.def)             Requested size: 66.1416pt x 66.3581pt.
 Package acronym Info: Label `acro:OBB' newly defined as it shall be overridden
-although it is yet undefined on input line 216.
+although it is yet undefined on input line 215.
 
 [3 <./figures/evo.pdf> <./figures/pipe_0.pdf> <./figures/pipe_1.pdf> <./figures
 /pipe_2.pdf> <./figures/pipe_4.pdf> <./figures/pipe_3.pdf>]
 Package acronym Info: Label `acro:BKA' newly defined as it shall be overridden
-although it is yet undefined on input line 227.
+although it is yet undefined on input line 226.
 
 <figures/right_part.pdf, id=54, 381.99901pt x 482.94714pt>
 File: figures/right_part.pdf Graphic file (type pdf)
 
 <use figures/right_part.pdf>
-Package pdftex.def Info: figures/right_part.pdf used on input line 237.
+Package pdftex.def Info: figures/right_part.pdf used on input line 236.
 (pdftex.def)             Requested size: 55.11745pt x 69.68286pt.
 
 <figures/wrong_part.pdf, id=55, 380.85074pt x 485.815pt>
 File: figures/wrong_part.pdf Graphic file (type pdf)
 
 <use figures/wrong_part.pdf>
-Package pdftex.def Info: figures/wrong_part.pdf used on input line 242.
+Package pdftex.def Info: figures/wrong_part.pdf used on input line 241.
 (pdftex.def)             Requested size: 55.11745pt x 70.30423pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 \T1/ptm/m/n/10 With known par-ti-tions, [][]-tree ex-trac-tion is
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 277--282
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 276--281
 \T1/ptm/m/n/10 size $\OML/ztmcm/m/it/10 n[]$\T1/ptm/m/n/10 , two crossover can-
 di-dates are se-lected
  []
 
 
-Underfull \hbox (badness 5563) in paragraph at lines 277--282
+Underfull \hbox (badness 5563) in paragraph at lines 276--281
 \T1/ptm/m/n/10 from $\OML/ztmcm/m/it/10 T[]$ \T1/ptm/m/n/10 via Tour-na-ment Se
 -lec-tion [[]]
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 277--282
+Underfull \hbox (badness 1430) in paragraph at lines 276--281
 \T1/ptm/m/n/10 can-di-dates ex-change ran-domly se-lected sub-trees
  []
 
@@ -806,45 +794,45 @@ ltiple pdfs with page group included in a single page
 File: figures/subtree_0.pdf Graphic file (type pdf)
 
 <use figures/subtree_0.pdf>
-Package pdftex.def Info: figures/subtree_0.pdf used on input line 323.
+Package pdftex.def Info: figures/subtree_0.pdf used on input line 322.
 (pdftex.def)             Requested size: 132.28322pt x 66.62483pt.
 
 <figures/subtree_1.pdf, id=78, 261.97874pt x 262.9825pt>
 File: figures/subtree_1.pdf Graphic file (type pdf)
 
 <use figures/subtree_1.pdf>
-Package pdftex.def Info: figures/subtree_1.pdf used on input line 329.
+Package pdftex.def Info: figures/subtree_1.pdf used on input line 328.
 (pdftex.def)             Requested size: 66.1416pt x 66.39151pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 359.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 358.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 359.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 358.
 
 <figures/wm_0.pdf, id=79, 605.26125pt x 305.14pt>
 File: figures/wm_0.pdf Graphic file (type pdf)
  <use figures/wm_0.pdf>
-Package pdftex.def Info: figures/wm_0.pdf used on input line 366.
+Package pdftex.def Info: figures/wm_0.pdf used on input line 365.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
 <figures/wm_1.pdf, id=80, 305.14pt x 306.14375pt>
 File: figures/wm_1.pdf Graphic file (type pdf)
  <use figures/wm_1.pdf>
-Package pdftex.def Info: figures/wm_1.pdf used on input line 368.
+Package pdftex.def Info: figures/wm_1.pdf used on input line 367.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
 <figures/wm_2.pdf, id=81, 305.14pt x 306.14375pt>
 File: figures/wm_2.pdf Graphic file (type pdf)
  <use figures/wm_2.pdf>
-Package pdftex.def Info: figures/wm_2.pdf used on input line 376.
+Package pdftex.def Info: figures/wm_2.pdf used on input line 375.
 (pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
 
 <figures/wm_3.pdf, id=82, 605.26125pt x 305.14pt>
 File: figures/wm_3.pdf Graphic file (type pdf)
  <use figures/wm_3.pdf>
-Package pdftex.def Info: figures/wm_3.pdf used on input line 378.
+Package pdftex.def Info: figures/wm_3.pdf used on input line 377.
 (pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
 
 Overfull \hbox (4.37888pt too wide) in paragraph at lines 429--454
@@ -1018,30 +1006,34 @@ pdfTeX warning: pdflatex.exe (file ./figures/tree_m1_ss.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 > <./figures/m0_pc.png> <./figures/m2_pc.png> <./figures/m3_pc.png> <./figures/
 m0_rendering_wo.png> <./figures/m2_rendering_wo.png> <./figures/m3_rendering_wo
-.png>] (main.aux) ) 
+.png>] (main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7126 strings out of 493323
- 104080 string characters out of 3139054
- 195775 words of memory out of 3000000
- 10431 multiletter control sequences out of 15000+200000
+ 7150 strings out of 493323
+ 104240 string characters out of 3139054
+ 196244 words of memory out of 3000000
+ 10455 multiletter control sequences out of 15000+200000
  61669 words of font info for 110 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,22n,49p,406b,550s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/rsfs/rsfs10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/u
-crr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/wasy/wasy10.pfb>
-Output written on main.pdf (9 pages, 2052533 bytes).
+ 42i,22n,49p,388b,550s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/rsfs/rsf
+s10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/u
+syr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/wasy/wasy10.pfb>
+Output written on main.pdf (9 pages, 2051466 bytes).
 PDF statistics:
  362 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
