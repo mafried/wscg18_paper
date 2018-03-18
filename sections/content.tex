@@ -19,7 +19,7 @@ To overcome this constraint, \ac{CSG}-tree generation can be formulated as a com
 Metaheuristics, like \acp{GA} can then be employed for optimization \cite{mitchell1998introduction}.
 \\
 One of the most severe disadvantages of \ac{GA}-based solutions are computation times of minutes and hours for comparably small models ($\le 10$ primitives) \cite{fayolle2016evolutionary}.
-This issue is addressed by the approaches proposed in this paper.  
+This issue is addressed in this paper.  
 \\
 The basic idea of the described acceleration scheme is to exploit spatial relationships between primitives: 
 Primitives that do not overlap spatially are not considered to be operands of a \ac{CSG}-operation.
@@ -45,7 +45,7 @@ Section \ref{sec:conclusion} summarizes the results and sketches possible future
 \section{Related Works}
 \label{sec:relworks}
 This work is related to different domains such as surface reconstruction from discrete point clouds, reverse engineering of solid models or conversion from B-Rep to CSG. 
-In this section, some related works in these domains is briefly discussed. 
+In this section, some related works in these domains are briefly discussed. 
 
 \paragraph{Surface reconstruction}
 The problem of reconstructing a surface from a discrete point cloud has been the subject of lots of attention in computer graphics. 
@@ -68,9 +68,9 @@ and later improved by
 Buchele and Crawford in \cite{buchele2004three}. 
 These works rely on the fact that surfaces are composed of quadric surface patches. 
 %(for computing separators, for factoring dominating halfspaces). 
-One issue of these algorithms is that their worst time complexity can be 
-exponential (the authors in \cite{buchele2004three} states a cubic 
-time complexity in practice, while remarking that the worst time complexity could be exponential). 
+%One issue of these algorithms is that their worst time complexity can be 
+%exponential (the authors in \cite{buchele2004three} states a cubic 
+%time complexity in practice, while remarking that the worst time complexity could be exponential). 
 Another issue is the handling of inexact representations. 
 These methods work under the assumption that the patches form a clean partition of the 
 target solid. However, in practice we are dealing with input point clouds that are potentially 
@@ -174,35 +174,36 @@ An overview of the full \ac{CSG}-tree extraction pipeline is depicted in Fig.~\r
 Each of the steps is described in details in the following sub-sections, following the order of execution.
 \begin{figure}[htb]
 	\centering
-	\begin{subfigure}[t]{0.30\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_0.pdf}
-		\caption{Primitives.}
-		\label{fig:pipe0}
-	\end{subfigure}
-	~
-	\begin{subfigure}[t]{0.30\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_1.pdf}
-		\caption{\ac{PO}-graph.}
-		\label{fig:pipe1}
-	\end{subfigure}
-	~
-	\begin{subfigure}[t]{0.30\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_2.pdf}
-		\caption{Partitions.}
-		\label{fig:pipe2}
-	\end{subfigure}
-	\vskip\baselineskip
-	\begin{subfigure}[b]{0.60\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_4.pdf}
-		\caption{Per-partition trees.}
-		\label{fig:pipe3}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.30\linewidth}
-		\includegraphics[width=\textwidth]{figures/pipe_3.pdf}
-		\caption{Merged tree.}
-		\label{fig:pipe4}
-	\end{subfigure}
+	\begin{tabular}[c]{ccc}
+		\begin{subfigure}[c]{0.30\linewidth}
+			\includegraphics[width=\textwidth]{figures/pipe_0.pdf}
+			\caption{Primitives.}
+			\label{fig:pipe0}
+		\end{subfigure}&
+		\begin{subfigure}[c]{0.30\linewidth}
+			\includegraphics[width=\textwidth]{figures/pipe_1.pdf}
+			\caption{\ac{PO}-graph.}
+			\label{fig:pipe1}
+		\end{subfigure}&
+		\begin{subfigure}[c]{0.30\linewidth}
+			\includegraphics[width=\textwidth]{figures/pipe_2.pdf}
+			\caption{Partitions.}
+			\label{fig:pipe2}
+		\end{subfigure}\\
+		\\
+		\multicolumn{2}{l}{
+			\begin{subfigure}[l]{0.60\linewidth}
+				\includegraphics[width=\textwidth]{figures/pipe_4.pdf}
+				\caption{Per-partition trees.}
+				\label{fig:pipe3}
+			\end{subfigure}
+		}&
+		\begin{subfigure}[c]{0.30\linewidth}
+			\includegraphics[width=\textwidth]{figures/pipe_3.pdf}
+			\caption{Merged tree.}
+			\label{fig:pipe4}
+		\end{subfigure}\\	
+	\end{tabular}
 	\vskip\baselineskip	
 	\caption{The search space partitioning pipeline.}\label{fig:pipeline_s}
 \end{figure}
@@ -289,12 +290,16 @@ In addition, the solution space partitioning allows for an additional per-partit
 Both options were implemented for multi-core processors and evaluated in Section~\ref{sec:eval}.
 \subsection{Merge of Per-Partition Trees}
 Merging all trees corresponding to partitions in a single tree is not trivial. 
-A simple union of all tree root nodes leads to incorrect results if primitives that are part of multiple cliques are not splitted, see Fig.~\ref{fig:munion} for an example.
-Split operations on arbitrary primitive shapes tend to be complex and thus should be avoided, see e.g. Fig.~\ref{fig:msplitting}.  
+A simple union of all tree root nodes leads to incorrect results if primitives that are part of multiple cliques are not splitted.
+Split operations on arbitrary primitive shapes tend to be complex and thus should be avoided.
+See Fig.~\ref{fig:wmerge} for examples.  
 The proposed merge strategy does not need splits but instead tries to merge trees that have a common subtree.
 It consists of the following steps:
 \begin{enumerate}
 	\item All trees are inserted in a list $L$ without adhering to any specific order.   
+	Extracted trees might contain artefacts that affect their mergeability (e.g. intersections with the same primitive as operands). 
+	Foreach tree in $L$, these parts are transformed by traversing the tree and replacing the aforementioned patterns iteratively with their simplifications (e.g. replacing the union of the same primitive with the primitive itself). 
+	The process is repeated until no more parts can be transformed that way.  
 	\item The last two trees $t_0$ and $t_1$ are removed from $L$, and their largest common subtree $t_{lcs}$ is computed. The subtree's leaf-set must be a subset of the leaf-sets of $t_0$ and $t_1$. 
 	The found largest common subtree might exist more than once in both trees.
 	Thus, the root nodes of each appearance of the subtree in $t_0$ and $t_1$ are stored in the lists $N_0$ and $N_1$ (see Fig.~\ref{fig:subtree_0}).
@@ -313,7 +318,7 @@ It consists of the following steps:
 	Then, the largest common subtree search and its subsequent steps are repeated.
 	\item $t_m$ is appended to $L$.
 	\item The merge process is continued until there is only a single node left in $L$.
-	Since the model to reconstruct is by definition connected, a pair of mergeable trees exists in each iteration. 
+	Since the model to reconstruct is connected, a pair of mergeable trees exists in each iteration. 
 	Thus, the merge process always terminates.
 \end{enumerate}
 \begin{figure}[htb]
@@ -360,27 +365,33 @@ The merge process has an asymptotic computational complexity of $\mathcal{O}(\ve
 \end{Ualgorithm}
 \begin{figure}[htb]
 	\centering
-	\begin{subfigure}[b]{\linewidth}
-  		\centering
-		\includegraphics[width=0.6\linewidth]{figures/wm_0.pdf}
-		\hfill
-		\includegraphics[width=0.3\linewidth]{figures/wm_1.pdf}
-		\caption{Wrong tree merge using union over all partition trees. 
-		Erroneous geometry in red (compare with Fig.~\ref{fig:pipe0}).}
-		\label{fig:munion}
-	\end{subfigure}
+	\begin{tabular}[c]{ccc}
+		\multicolumn{2}{c}{
+			\begin{subfigure}[c]{0.6\linewidth}
+				\includegraphics[width=\linewidth]{figures/wm_0.pdf}
+				%\caption{Wrong tree merge using union over all partition trees. 
+				%Erroneous geometry in red (compare with Fig.~\ref{fig:pipe0}).}
+				%\label{fig:munion}
+			\end{subfigure}
+		}&
+		\begin{subfigure}[c]{0.3\linewidth}
+			\includegraphics[width=\linewidth]{figures/wm_1.pdf}
+		\end{subfigure}\\
+		\\
+		\begin{subfigure}[c]{0.3\linewidth}
+			\includegraphics[width=\linewidth]{figures/wm_2.pdf}
+			%\caption{Correct tree merge using union over all partition trees with primitive splitting (green curve).}
+			%\label{fig:msplitting}
+		\end{subfigure}&
+		\multicolumn{2}{c}{
+			\begin{subfigure}[c]{0.6\linewidth}
+				\includegraphics[width=\linewidth]{figures/wm_3.pdf}
+			\end{subfigure}
+		}		
+	\end{tabular}
 	\vskip\baselineskip
-	\begin{subfigure}[b]{\linewidth}
-		\centering
-		\includegraphics[width=0.3\linewidth]{figures/wm_2.pdf}
-		\hfill
-		\includegraphics[width=0.6\linewidth]{figures/wm_3.pdf}
-		\hfill
-		\caption{Correct tree merge using union over all partition trees with primitive splitting (green curve).}
-		\label{fig:msplitting}
-	\end{subfigure}
-	\vskip\baselineskip
-	\caption{Merge strategies.}\label{fig:wmerge}
+	\caption{Merge strategies. Top: Wrong tree merge using union over all partition trees. 
+		Erroneous geometry in red (compare with Fig.~\ref{fig:pipe0}). Bottom: Correct tree merge using union over all partition trees with primitive splitting (green curve).}\label{fig:wmerge}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 %%% Evaluation %%%
