@@ -74,6 +74,11 @@ Yutaka Ohtake, Alexander Belyaev, Marc Alexa, Greg Turk, and Hans-Peter Seidel.
 \newblock Multi-level partition of unity implicits.
 \newblock {\em ACM Trans. Graph.}, 22(3):463--470, 2003.
 
+\bibitem[Olv14]{olver2014introduction}
+Peter Olver.
+\newblock {\em Introduction to partial differential equations}, volume~1.
+\newblock Springer, 2014.
+
 \bibitem[PH77]{preparata1977convex}
 Franco~P. Preparata and Se~June Hong.
 \newblock Convex hulls of finite sets of points in two and three dimensions.
