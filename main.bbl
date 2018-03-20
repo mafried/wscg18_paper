@@ -126,10 +126,4 @@ Tam{\'a}s V{\'a}rady, Ralph~R Martin, and Jordan Cox.
 \newblock Reverse engineering of geometric models-an introduction.
 \newblock {\em Computer-Aided Design}, 29(4):255--268, 1997.
 
-\bibitem[Wei09]{weiss2009geometry}
-Daniel Weiss.
-\newblock {\em Geometry-based structural optimization on CAD specification
-  trees}.
-\newblock PhD thesis, ETH Zurich, 2009.
-
 \end{thebibliography}

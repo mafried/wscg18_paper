@@ -5,12 +5,11 @@
 \ac{RE} -- i.e., the recovery of a model's geometric representation from potentially noisy and incomplete sensor data -- is an important aspect of modern \ac{CAD} pipelines. 
 It allows for convenient model editing based on real-world physical objects, thus simplifying and accelerating the product design process.
 An expressive and intuitive model representation scheme extensively used in solid modeling is \ac{CSG}.
-It describes complex rigid solids by a binary tree with regularized boolean set-operations (e.g., union, intersection, subtraction) as inner nodes and primitive solids (e.g., cubes, spheres, cylinders and cones) as leaves. 
+It describes complex rigid solids by a binary tree with regularized Boolean set-operations (e.g., union, intersection, subtraction) as inner nodes and primitive solids (e.g., cubes, spheres, cylinders and cones) as leaves. 
 Such a tree is also known as a model's Construction Tree.
 Due to the popularity of \ac{CSG} in \ac{CAD}, it is desirable to have tools at hand that are able to reliably recover a model's \ac{CSG}-tree from its point cloud representation stemming from sensor recordings.
 \ac{CSG}-tree generation might be solved by converting the input point cloud to a Boundary Representation (B-rep) and then by conversion of the B-rep to CSG with methods based on algorithmic geometry that usually require exact geometric intersection computations \cite{shapiro1993separation, buchele2004three}. 
-These approaches are usually restricted to a single model representation for primitives, e.g. a surface description that uses quadrics. 
-These methods can also be sensitive when handling inexact representations. 
+These approaches are usually restricted to a single model representation for primitives, e.g. a surface description that uses quadrics, and can be sensitive to inexact representations. 
 \\
 To overcome these constraints, \ac{CSG}-tree generation can be formulated as a combinatorial optimization problem over the possible permutations of primitives and set-operations for a fixed maximum \ac{CSG}-tree depth.
 Metaheuristics, like \acp{GA} can then be employed for optimization \cite{mitchell1998introduction}.
@@ -97,7 +96,7 @@ These can be trimmed from the data-set using e.g. statistical approaches  \cite{
 \item \textbf{\ac{CSG}-tree generation:} \ac{CSG}-tree generation can be done with methods based on algorithmic geometry such as \cite{shapiro1993separation, buchele2004three}, or via evolutionary approaches such as \cite{fayolle2016evolutionary} for handling inexact representations.
 %\\
 \item \textbf {\ac{CSG}-tree optimization:} The resulting \ac{CSG}-tree might not be optimal in terms of size and depth.
-Additional optimization techniques can simplify the tree structure \cite{weiss2009geometry, shapiro1991construction}. 
+Additional optimization techniques can simplify the tree structure \cite{shapiro1991construction}. 
 \end{enumerate}
 \subsection{Primitive Description}
 Primitives are basic shapes located at \ac{CSG}-tree leaves. 
@@ -114,7 +113,7 @@ The set-operations intersection, union, complement and subtraction are implement
 	\item Subtraction: $S_1 \setminus S_2 := S_1 \cap \overline{S_2}$% = max(-f_{S_1}, f_{S_2})$
 \end{itemize}
 where $S_i$ is the solid corresponding to the set $\{x \in \mathbb{R}^3: f_{S_i} \geq 0\}$ ($i=1,2$).
-In the following, the considered boolean set-operations are intersection, union and subtraction.
+In the following, the considered Boolean set-operations are intersection, union, complement and subtraction.
 \subsection{Evolutionary Algorithms} 
 Evolutionary Algorithms are biology-inspired, stochastic metaheuristics for solving optimization problems \cite{eiben2003introduction}.
 \\
@@ -285,6 +284,7 @@ Since evaluations can be conducted for each candidate independently, parallel pr
 In addition, the solution space partitioning allows for a per-partition parallelization strategy.
 Both options were implemented for multi-core processors. Their evaluation is part of Section~\ref{sec:eval}.
 \subsection{Merge of Per-Partition Trees}
+\label{sec:merge}
 Merging all trees corresponding to partitions into a single tree is not trivial. 
 A simple union of all tree root nodes may lead to incorrect results if primitives that are part of multiple cliques are not splitted.
 Split operations on arbitrary primitive shapes tend to be complex and thus should be avoided.
@@ -494,15 +494,16 @@ Results for per-partition variants do not show timings for different pipeline st
 The summarized time measures for \ac{PO}-graph generation, search space partitioning and tree merge make less than $1\permil$ of the total runtime.
 \subsection{Tree Sizes and Depths}  
 Fig.~\ref{fig:graph2} contains average depths and sizes of resulting trees for baseline and partitioning variants.
-For the latter, tree depths have increased by $41.7\%$ (model M$1$) to $182.5\%$ (model M$2$) compared to the input tree, while for baseline approaches, an increase of $0.0\%$ (model M$1$) to $130.0\%$ (model M$2$) is visible.
+For the latter, tree depths have increased by $25.0\%$ (model M$1$) to $285.0\%$ (model M$2$) compared to the input tree, while for baseline approaches, an increase of $0.0\%$ (model M$1$) to $125.0\%$ (model M$2$) is visible.
 Tree sizes show similar behavior:
-Partitioning variants produce $44.4\%$ (model M$2$) to $82.2\%$ (model M$0$) larger trees, while baseline approaches increase tree size by only $18.6\%$ (model M$2$) to $25.0\%$ (model M$1$).
-Comparing tree sizes between partitioning and baseline approaches directly reveals that the former results in $21.7\%$ (model M$2$) to $181.8\%$ (model M$3$) larger trees.
+Partitioning variants produce $46.1\%$ (model M$2$) to $68.2\%$ (model M$0$) larger trees, while baseline approaches increase tree size by only $0.0\%$ (model M$0$) to $16.7\%$ (model M$2$).
+Comparing tree sizes between partitioning and baseline approaches directly reveals that the former results in $25.2\%$ (model M$2$) to $88.6\%$ (model M$3$) larger trees.
 \\
 This adverse behavior shown by partitioning variants is due to the final merge step:
 In each iteration, the two trees that are close to each other in the tree list and have a common subtree of at least size $1$ are merged instead of the two trees with the largest common subtree of all tree pairs in the merge list. 
-%not those two trees with the largest common subtree of all trees in the merge list are merged but those that are neighbors in the merge list and have a common subtree of at least size $1$.
 Since the focus of this work is on performance, this is acceptable.
+In addition, the tree optimization strategy described in Section \ref{sec:merge} (step $1$) was also applied to baseline results for better comparability which has positive impact on resulting tree depths and sizes.
+%not those two trees with the largest common subtree of all trees in the merge list are merged but those that are neighbors in the merge list and have a common subtree of at least size $1$.
 \subsection{Scalability with Respect to Point Cloud Size}  
 Fig.~\ref{fig:graph3} depicts measurement results for the ratio
 \begin{equation} \label{eq:ratio}
@@ -626,7 +627,7 @@ Finally, since the partitioning (and merge) approach described in this work is i
 		\caption{\ac{CSG}-tree from partitioning scheme.}
 	\end{subfigure}	
 	\vskip\baselineskip	
-	\caption{Results of all pipeline steps for model M$1$.}
+	\caption{Results of all pipeline steps for model M$1$. The wing-like structure is based on a simple cube whose signed distance function is distorted by a sinusoidal term. This demonstrates the flexibility of the proposed approach in terms of possible model representations.}
 	\label{fig:models}
 \end{figure*}
 \begin{figure*}
