@@ -74,6 +74,7 @@ noisy, contain holes, or have additional details and thus the fitted primitives 
 This could impact the cellular classification on which these methods rely. 
 
 \subsection{Point Cloud to CSG Construction}
+\label{sec:pipeline}
 Close to the proposed approach are methods that handle noisy and incomplete point clouds 
 such as \cite{schnabel2007efficient} for fitting primitives and methods that try to convert them to a higher level representation such as \cite{fayolle2016evolutionary}, see also \cite[Sections~7 and 8]{berger2017survey}. 
 One of the goals of this work is to improve the running time of the Evolutionary Algorithm used in \cite{fayolle2016evolutionary} via geometric consideration, i.e. the overlapping in space of primitives.
@@ -138,21 +139,26 @@ Evolutionary Algorithms are especially useful for solving combinatorial optimiza
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem Statement}
 \label{sec:prob}
+%The problem of accelerating \ac{GA}-based \ac{CSG}-tree extraction from point clouds is considered as the open research question addressed by this paper.
+%\\
+%As input, a point-set of potentially noisy $3$-d measurements of a connected geometric model together with segmented and fitted primitives 
+%(and eventually separators \cite{shapiro1993separation}) 
+%is considered. 
+%The point-set might contain outliers and incomplete regions due to measurement errors that affect the resulting quality of the primitive %reconstruction step.
+%\\
+%The desired output is a \ac{CSG}-tree that represents the scanned real-world model as accurately as possible.
+%A measure for accuracy is given by the distance between the \ac{CSG}-tree induced surface and the points of the input point cloud.
+%\ac{CSG}-tree extraction approaches based on a \ac{GA} \cite{fayolle2016evolutionary} can handle 
+%inaccuracies but come with the disadvantage of potentially high computation times.
 The problem of accelerating \ac{GA}-based \ac{CSG}-tree extraction from point clouds is considered as the open research question addressed by this paper.
-\\
-As input, a point-set of potentially noisy $3$-d measurements of a connected geometric model together with segmented and fitted primitives 
-(and eventually separators \cite{shapiro1993separation}) 
-is considered. 
-The point-set might contain outliers and incomplete regions due to measurement errors that affect the resulting quality of the primitive reconstruction step.
+Focus is on the \ac{CSG}-tree generation and optimization step of the reconstruction pipeline described in Section \ref{sec:pipeline}.
+As input, a point-set of potentially noisy $3$-d measurements of a connected geometric model together with already segmented and fitted primitives is considered.
+Thus, the first two pipeline steps are assumed to be solved.
 \\
 The desired output is a \ac{CSG}-tree that represents the scanned real-world model as accurately as possible.
 A measure for accuracy is given by the distance between the \ac{CSG}-tree induced surface and the points of the input point cloud.
 \ac{CSG}-tree extraction approaches based on a \ac{GA} \cite{fayolle2016evolutionary} can handle 
 inaccuracies but come with the disadvantage of potentially high computation times.
-%With each point, a position $p$ and its estimated normal vector $n$ is stored.  
-%There is no further topological information given. 
-%- Fehlerbehaftete und fehlende Punktwolken
-%- CSG erstellen
 %%%%%%%%%%%%%%%
 %%% Concept %%%
 %%%%%%%%%%%%%%%
@@ -271,9 +277,9 @@ Each \ac{GA} iteration $i$ contains the following steps:
 \item The current population is initialized with the $n_b$ best candidates from $T_{i-1}$.
 \item As long as $T_i$ has not reached maximum population size $n_T$, two crossover candidates are selected from $T_{i-1}$ via Tournament Selection parameterized with $k_{ts}$ (size of the set of randomly chosen population members from which the best member is selected) \cite{miller95genetic}.
 During crossover, the two candidates exchange randomly selected subtrees with a probability of $\gamma_{cr}$.
-The resulting two trees are then mutated. 
-In the mutation process a randomly chosen subtree is replaced with a new randomly generated subtree with a probability of $\gamma_{mu}$.
-With a probability of $1-\gamma_{mu}$, the whole tree is replaced with a randomly generated tree.
+Then, with a probability of $\gamma_{mu}$, the resulting two trees are mutated. 
+In the mutation process a randomly chosen subtree is replaced with a new randomly generated subtree with a probability of $\mu_{mu}$.
+With a probability of $1-\mu_{mu}$, the whole tree is replaced with a randomly generated tree.
 \item The termination condition is met if the score of the best \ac{CSG}-tree candidate of an iteration does not improve over $n_{tc}$ iterations.  	 
 \end{enumerate}  
 %The main difference of the described \ac{GA} variant compared to the \ac{GA} proposed in \cite{fayolle2016evolutionary} is the use of truncated solid primitives instead of implicitly defined surfaces of infinite extend in at least one dimension (eg. planes, cylinders). 
@@ -296,7 +302,7 @@ It consists of the following steps:
 	Extracted trees might contain artefacts that affect their mergeability (e.g., intersections with the same primitive for both operands). 
 	For each tree in $L$, artefacts are removed by traversing the tree and replacing found patterns iteratively with their simplifications (e.g., replacing an intersection with the same primitive for both operands with the primitive itself). 
 	The process is repeated until no more artefacts can be removed.  
-	\item Two trees $t_0$ and $t_1$ are removed from the head of $L$, and their largest common subtree $t_{lcs}$ is computed.
+	\item Two trees $t_0$ and $t_1$ are removed from the head of $L$, and their largest common subtree $t_{lcs}$ is computed which has an asymptotic computational complexity of $\mathcal{O}(\max(\text{size}(t_0),\text{size}(t_1)))$.
 	The subtree's leaf-set must be a subset of the leaf-sets of both, $t_0$ and $t_1$. 
 	The largest common subtree found might exist more than once in both trees.
 	Thus, the root nodes of each appearance of the subtree in $t_0$ and $t_1$ are stored in the lists $N_0$ and $N_1$ (see Fig.~\ref{fig:subtree_0}).
@@ -373,11 +379,11 @@ It consists of the following steps:
 		}
 		\uIf{curNode.nodeType = Operation}{
 			\uIf{curNode.operationType = Difference}{
-				\KwRet {\proc{curNode.children[0]}}
+				\KwRet {\proc{curNode.childs[0], node}}
 			}
 			\uElseIf{curNode.operationType = Union}{
-				\ForEach{child $\in$ curNode.children}{
-					\uIf{\proc{child}}{
+				\ForEach{child $\in$ curNode.childs}{
+					\uIf{\proc{child, node}}{
 						\KwRet {true}
 					}
 				}
@@ -448,9 +454,11 @@ The following combinations were evaluated:
 		\hline
 		\# Best parents $n_b$ & 2 \\
 		\hline
-		Crossover probability $\mu_{cr}$& 0.3 \\
+		Crossover probability $\gamma_{cr}$& 0.3 \\
 		\hline
-		Mutation probability $\mu_{mu}$& 0.3 \\
+		Mutation probability $\gamma_{mu}$& 0.3 \\
+		\hline
+		Subtree replacement probability $\mu_{mu}$& 0.5 \\
 		\hline
 		Tournament selection parameter $k_{ts}$ & 2\\
 		\hline
@@ -474,6 +482,7 @@ Measurements vary significantly for the same benchmark setting due to the inhere
 In order to deal with the high variance, each experiment was repeated $5$ times.
 \\
 In the following, timing results for all methods in combination with high-detail sampling are discussed.
+See Fig.~\ref{fig:graph1} and \ref{fig:graph4} for an overview of the results. 
 For model M$0$, SMTGA is the fastest method. 
 It outperforms the baseline by a factor of $15.3$ (single-threaded, BST) and $7.5$ (multi-threaded, BMTGA) on average.
 For model M$1$, search space partitioning performs worse than baseline: 
@@ -489,7 +498,7 @@ This is due to the granularity and regularity of the parallelization:
 For SMTGA, the task of ranking a population can be splitted into $n_T$ parts, with each part having similar execution times.
 For per-partition variants, granularity is determined by the (potentially lower) number of partitions, and per-partition execution times may vary significantly depending on partition sizes. 
 \\
-See Fig.~\ref{fig:graph1} and \ref{fig:graph4} for an overview of the results of the complete performance experiment.
+%See Fig.~\ref{fig:graph1} and \ref{fig:graph4} for an overview of the results of the complete performance experiment.
 Results for per-partition variants do not show timings for different pipeline steps since in all experiments, per-partition \ac{CSG}-tree extraction is by far the most dominant factor. 
 The summarized time measures for \ac{PO}-graph generation, search space partitioning and tree merge make less than $1\permil$ of the total runtime.
 \subsection{Tree Sizes and Depths}  
