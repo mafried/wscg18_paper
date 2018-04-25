@@ -1,6 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{OBA{\etalchar{+}}03}
 
+\bibitem[And13]{andrews2013user}
+James~L Andrews.
+\newblock {\em User-Guided Inverse 3D Modeling}.
+\newblock PhD thesis, University of California, Berkeley, 2013.
+
 \bibitem[BC04]{buchele2004three}
 Suzanne~F Buchele and Richard~H Crawford.
 \newblock Three-dimensional halfspace constructive solid geometry tree
@@ -125,5 +130,11 @@ Ruwen Schnabel, Roland Wahl, and Reinhard Klein.
 Tam{\'a}s V{\'a}rady, Ralph~R Martin, and Jordan Cox.
 \newblock Reverse engineering of geometric models-an introduction.
 \newblock {\em Computer-Aided Design}, 29(4):255--268, 1997.
+
+\bibitem[XF14]{xiao2014}
+Jianxiong Xiao and Yasutaka Furukawa.
+\newblock Reconstructing the world's museums.
+\newblock {\em International Journal of Computer Vision}, 110(3):243--258, Dec
+  2014.
 
 \end{thebibliography}

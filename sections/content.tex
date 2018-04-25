@@ -60,8 +60,7 @@ later extended by Shapiro et al. for handling curved polygons \cite{shapiro1991e
 The extension to three-dimensional objects was initially solved 
 by Shapiro and Vossler in 
 \cite{shapiro1991construction, shapiro1993separation} 
-and later improved by 
-Buchele and Crawford in \cite{buchele2004three}. 
+and later improved by Buchele and Crawford in \cite{buchele2004three} and by Andrews in \cite{andrews2013user}. 
 These works rely on the fact that surfaces are composed of quadric surface patches. 
 %(for computing separators, for factoring dominating halfspaces). 
 %One issue of these algorithms is that their worst time complexity can be 
@@ -94,7 +93,8 @@ These can be trimmed from the data-set using e.g. statistical approaches  \cite{
 %\\
 \item \textbf{Point cloud segmentation and primitive fitting:} The point cloud must be segmented and primitive parameters have to be fitted to the corresponding points. Approaches that fulfill both tasks for simple geometric shapes are e.g. specialized variants of the \ac{RANSAC} technique \cite{schnabel2007efficient}.
 %\\
-\item \textbf{\ac{CSG}-tree generation:} \ac{CSG}-tree generation can be done with methods based on algorithmic geometry such as \cite{shapiro1993separation, buchele2004three}, or via evolutionary approaches such as \cite{fayolle2016evolutionary} for handling inexact representations.
+\item \textbf{\ac{CSG}-tree generation:} \ac{CSG}-tree generation can be done with methods based on algorithmic geometry such as \cite{shapiro1993separation, buchele2004three, andrews2013user}, or by formulating the problem as an optimization problem. 
+For the latter, solutions can then be obtained eg. by evolutionary \cite{fayolle2016evolutionary} or greedy \cite{xiao2014} approaches for handling inexact representations.
 %\\
 \item \textbf {\ac{CSG}-tree optimization:} The resulting \ac{CSG}-tree might not be optimal in terms of size and depth.
 Additional optimization techniques can simplify the tree structure \cite{shapiro1991construction}. 
@@ -641,33 +641,33 @@ Finally, since the partitioning (and merge) approach described in this work is i
 \end{figure*}
 \begin{figure*}
 	\centering
-	\begin{subfigure}[b]{0.30\linewidth}
+	\begin{subfigure}[b]{0.21\linewidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/m0_pc.png}
 		%\caption{Model $0$}
 	\end{subfigure}	 
-	\begin{subfigure}[b]{0.3\linewidth}
+	\begin{subfigure}[b]{0.21\linewidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/m2_pc.png}
 		%\caption{Model $2$}
 	\end{subfigure}	
-	\begin{subfigure}[b]{0.3\linewidth}
+	\begin{subfigure}[b]{0.21\linewidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/m3_pc.png}
 		%\caption{Model $3$}
 	\end{subfigure}	 
 	\\
-	\begin{subfigure}[b]{0.30\linewidth}
+	\begin{subfigure}[b]{0.21\linewidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/m0_rendering_wo.png}
 		\caption{Model M$0$.}
 	\end{subfigure}	 
-	\begin{subfigure}[b]{0.3\linewidth}
+	\begin{subfigure}[b]{0.21\linewidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/m2_rendering_wo.png}
 		\caption{Model M$2$.}
 	\end{subfigure}	
-	\begin{subfigure}[b]{0.3\linewidth}
+	\begin{subfigure}[b]{0.21\linewidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/m3_rendering_wo.png}
 		\caption{Model M$3$.}

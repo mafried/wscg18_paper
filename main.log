@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  24 APR 2018 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  25 APR 2018 13:31
 entering extended mode
 **./main.tex
 (main.tex
@@ -633,15 +633,15 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 
 
 ]
-Underfull \hbox (badness 1502) in paragraph at lines 53--75
+Underfull \hbox (badness 1502) in paragraph at lines 53--74
 \T1/ptm/m/n/10 ti-gated for two-dimensional, lin-ear poly-gons, then
  []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 89.
 Package acronym Info: Label `acro:RANSAC' newly defined as it shall be overridd
 en
-although it is yet undefined on input line 95.
+although it is yet undefined on input line 94.
 
 Underfull \hbox (badness 1082) in paragraph at lines 109--110
 \T1/ptm/m/n/10 The set-operations in-ter-sec-tion, union, com-ple-ment
@@ -902,26 +902,26 @@ Package pdftex.def Info: figures/tree_m1_ss.pdf used on input line 635.
 File: figures/m0_pc.png Graphic file (type png)
  <use figures/m0_pc.png>
 Package pdftex.def Info: figures/m0_pc.png used on input line 646.
-(pdftex.def)             Requested size: 136.57462pt x 118.13051pt.
+(pdftex.def)             Requested size: 95.60431pt x 82.68538pt.
 
 <figures/m2_pc.png, id=136, 667.74469pt x 484.81125pt>
 File: figures/m2_pc.png Graphic file (type png)
  <use figures/m2_pc.png>
 Package pdftex.def Info: figures/m2_pc.png used on input line 651.
-(pdftex.def)             Requested size: 136.57462pt x 99.15762pt.
+(pdftex.def)             Requested size: 95.60431pt x 69.4118pt.
 
 <figures/m3_pc.png, id=137, 576.65437pt x 530.73282pt>
 File: figures/m3_pc.png Graphic file (type png)
  <use figures/m3_pc.png>
 Package pdftex.def Info: figures/m3_pc.png used on input line 656.
-(pdftex.def)             Requested size: 136.57462pt x 125.69402pt.
+(pdftex.def)             Requested size: 95.60431pt x 87.98824pt.
 
 <figures/m0_rendering_wo.png, id=138, 882.29625pt x 636.12656pt>
 File: figures/m0_rendering_wo.png Graphic file (type png)
 
 <use figures/m0_rendering_wo.png>
 Package pdftex.def Info: figures/m0_rendering_wo.png used on input line 662.
-(pdftex.def)             Requested size: 136.57462pt x 98.4627pt.
+(pdftex.def)             Requested size: 95.60431pt x 68.92583pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 663.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
@@ -934,14 +934,14 @@ File: figures/m2_rendering_wo.png Graphic file (type png)
 
 <use figures/m2_rendering_wo.png>
 Package pdftex.def Info: figures/m2_rendering_wo.png used on input line 667.
-(pdftex.def)             Requested size: 136.57462pt x 98.4627pt.
+(pdftex.def)             Requested size: 95.60431pt x 68.92583pt.
 
 <figures/m3_rendering_wo.png, id=140, 1221.06187pt x 813.0375pt>
 File: figures/m3_rendering_wo.png Graphic file (type png)
 
 <use figures/m3_rendering_wo.png>
 Package pdftex.def Info: figures/m3_rendering_wo.png used on input line 672.
-(pdftex.def)             Requested size: 136.57462pt x 90.93552pt.
+(pdftex.def)             Requested size: 95.60431pt x 63.65486pt.
 ) (main.bbl
 Underfull \vbox (badness 1515) has occurred while \output is active []
 
@@ -956,8 +956,11 @@ dfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./figures/g2.pdf>] [9 <./figures/m1_pc.png> <./figures/graph_m1.pdf> <./fi
-gures/m1_rendering_wo.png> <./figures/tree_m1_gt.pdf
+ [8 <./figures/g2.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [9 <./figures/m1_pc.png> <./figures/graph_m1.pdf> <./figures/m1_rendering_wo.
+png> <./figures/tree_m1_gt.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/tree_m1_gt.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
@@ -971,34 +974,32 @@ pdfTeX warning: pdflatex.exe (file ./figures/tree_m1_ss.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 > <./figures/m0_pc.png> <./figures/m2_pc.png> <./figures/m3_pc.png> <./figures/
 m0_rendering_wo.png> <./figures/m2_rendering_wo.png> <./figures/m3_rendering_wo
-.png>]) [10
-
-] (main.aux) ) 
+.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 7152 strings out of 493323
- 104219 string characters out of 3139054
- 198155 words of memory out of 3000000
- 10456 multiletter control sequences out of 15000+200000
+ 7157 strings out of 493323
+ 104280 string characters out of 3139054
+ 197196 words of memory out of 3000000
+ 10461 multiletter control sequences out of 15000+200000
  66203 words of font info for 113 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,21n,49p,437b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/rsfs/rsfs10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/wasy/wasy10.pfb>
-Output written on main.pdf (10 pages, 2361321 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/rsfs/rsfs10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/u
+crr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/wasy/wasy10.pfb>
+Output written on main.pdf (9 pages, 2361810 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
+ 466 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
