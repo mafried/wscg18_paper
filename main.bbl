@@ -1,11 +1,6 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{OBA{\etalchar{+}}03}
 
-\bibitem[And13]{andrews2013user}
-James~L Andrews.
-\newblock {\em User-Guided Inverse 3D Modeling}.
-\newblock PhD thesis, University of California, Berkeley, 2013.
-
 \bibitem[BC04]{buchele2004three}
 Suzanne~F Buchele and Richard~H Crawford.
 \newblock Three-dimensional halfspace constructive solid geometry tree
@@ -78,11 +73,6 @@ John~W Moon and Leo Moser.
 Yutaka Ohtake, Alexander Belyaev, Marc Alexa, Greg Turk, and Hans-Peter Seidel.
 \newblock Multi-level partition of unity implicits.
 \newblock {\em ACM Trans. Graph.}, 22(3):463--470, 2003.
-
-\bibitem[Olv14]{olver2014introduction}
-Peter Olver.
-\newblock {\em Introduction to partial differential equations}, volume~1.
-\newblock Springer, 2014.
 
 \bibitem[PH77]{preparata1977convex}
 Franco~P. Preparata and Se~June Hong.
