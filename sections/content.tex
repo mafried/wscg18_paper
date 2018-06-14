@@ -6,6 +6,7 @@
 It allows for convenient model editing based on real-world physical objects, thus simplifying and accelerating the product design process.
 An expressive and intuitive model representation scheme extensively used in solid modeling is \ac{CSG}.
 It describes complex rigid solids by a binary tree with regularized Boolean set-operations (e.g., union, intersection, subtraction) as inner nodes and primitive solids (e.g., cubes, spheres, cylinders and cones) as leaves. 
+\copyrightspace
 Such a tree is also known as a model's Construction Tree.
 Due to the popularity of \ac{CSG} in \ac{CAD}, it is desirable to have tools at hand that are able to reliably recover a model's \ac{CSG}-tree from its point cloud representation stemming from sensor recordings.
 \ac{CSG}-tree generation might be solved by converting the input point cloud to a Boundary Representation (B-rep) and then by conversion of the B-rep to CSG with methods based on algorithmic geometry that usually require exact geometric intersection computations \cite{shapiro1993separation, buchele2004three}. 
@@ -32,8 +33,6 @@ It is followed by an introduction to the theoretical principles of the proposed 
 The problem to solve is detailed in Section \ref{sec:prob}.
 The proposed solution is described in Section \ref{sec:concept} and evaluated in Section \ref{sec:eval}.
 Section \ref{sec:conclusion} summarizes the results and sketches possible future work.
-
-\copyrightspace
 
 %%%%%%%%%%%%%%%%%%%%
 %%% Related Work %%%
@@ -155,9 +154,9 @@ Evolutionary Algorithms are especially useful for solving combinatorial optimiza
 %A measure for accuracy is given by the distance between the \ac{CSG}-tree induced surface and the points of the input point cloud.
 %\ac{CSG}-tree extraction approaches based on a \ac{GA} \cite{fayolle2016evolutionary} can handle 
 %inaccuracies but come with the disadvantage of potentially high computation times.
-The problem of accelerating a \ac{GA}-based \ac{CSG}-tree extraction from point clouds is considered as the open research question addressed by this paper.
-The focus is on the \ac{CSG}-tree generation and optimization (steps 3 and 4 of the pipeline described in Section \ref{sec:pipeline}).
-As input, a point-set of potentially noisy $3$-d measurements of a connected geometric model is considered. We also assume that the point-set is already segmented with fitted primitives, using techniques described in steps 1 and 2 of the pipeline described in Section \ref{sec:pipeline}.
+The problem of accelerating \ac{GA}-based \ac{CSG}-tree extraction from point clouds is considered as the open research question addressed by this paper.
+The focus is on \ac{CSG}-tree generation and optimization (step $3$ and $4$ of the pipeline detailed in Section \ref{sec:pipeline}).
+As input, a point-set of potentially noisy $3$-d measurements of a connected geometric model is considered. We also assume that the point-set is already segmented with fitted primitives, using techniques depicted in step $1$ and $2$ of the pipeline described in Section \ref{sec:pipeline}.
 \\
 The desired output is a \ac{CSG}-tree that represents the scanned real-world model as accurately as possible.
 A measure for accuracy is given by the distance between the \ac{CSG}-tree induced surface and the points of the input point cloud.
