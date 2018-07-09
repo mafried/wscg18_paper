@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  14 JUN 2018 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.8)  15 JUN 2018 17:28
 entering extended mode
 **./main.tex
 (main.tex
@@ -671,13 +671,13 @@ Package pdftex.def Info: figures/evo.pdf used on input line 137.
 File: figures/pipe_0.pdf Graphic file (type pdf)
  <use figures/pipe_0.pdf>
 Package pdftex.def Info: figures/pipe_0.pdf used on input line 181.
-(pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
+(pdftex.def)             Requested size: 61.73126pt x 61.93303pt.
 
 <figures/pipe_1.pdf, id=20, 305.14pt x 306.14375pt>
 File: figures/pipe_1.pdf Graphic file (type pdf)
  <use figures/pipe_1.pdf>
 Package pdftex.def Info: figures/pipe_1.pdf used on input line 186.
-(pdftex.def)             Requested size: 66.1416pt x 66.35683pt.
+(pdftex.def)             Requested size: 61.73126pt x 61.93303pt.
 Package acronym Info: Label `acro:PO' newly defined as it shall be overridden
 although it is yet undefined on input line 187.
 
@@ -685,21 +685,21 @@ although it is yet undefined on input line 187.
 File: figures/pipe_2.pdf Graphic file (type pdf)
  <use figures/pipe_2.pdf>
 Package pdftex.def Info: figures/pipe_2.pdf used on input line 191.
-(pdftex.def)             Requested size: 66.1416pt x 67.6622pt.
+(pdftex.def)             Requested size: 61.73126pt x 63.15138pt.
 
 <figures/pipe_4.pdf, id=22, 605.26125pt x 305.14pt>
 File: figures/pipe_4.pdf Graphic file (type pdf)
  <use figures/pipe_4.pdf>
 Package pdftex.def Info: figures/pipe_4.pdf used on input line 202.
-(pdftex.def)             Requested size: 132.28322pt x 66.68867pt.
+(pdftex.def)             Requested size: 123.46254pt x 62.24214pt.
 
 <figures/pipe_3.pdf, id=23, 304.13625pt x 305.14pt>
 File: figures/pipe_3.pdf Graphic file (type pdf)
  <use figures/pipe_3.pdf>
 Package pdftex.def Info: figures/pipe_3.pdf used on input line 204.
-(pdftex.def)             Requested size: 66.1416pt x 66.3581pt.
+(pdftex.def)             Requested size: 61.73126pt x 61.93484pt.
 
-Overfull \hbox (13.955pt too wide) in paragraph at lines 179--209
+Overfull \hbox (0.72398pt too wide) in paragraph at lines 179--209
  [][] 
  []
 
@@ -812,10 +812,6 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
 pdfTeX warning: pdflatex.exe (file ./figures/wm_2.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 > <./figures/wm_3.pdf> <./figures/subtree_0.pdf> <./figures/subtree_1.pdf>]
-Overfull \hbox (8.77084pt too wide) in paragraph at lines 485--512
- [][] 
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -988,7 +984,7 @@ ype1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/wasy/wasy10.pfb>
-Output written on main.pdf (9 pages, 2470658 bytes).
+Output written on main.pdf (9 pages, 2470663 bytes).
 PDF statistics:
  621 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
